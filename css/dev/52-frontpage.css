@@ -135,17 +135,7 @@ and (min-width: 1020px) {
 
 }
 
-@media only screen 
-and (min-width : 1224px) {
 
-	/*.frontpage-gallery {
-		column-count: 2;
-	}*/
-	
-}
 
-.ul-presta {
-	font-size: 16px;
-}
 
 /* @end */
