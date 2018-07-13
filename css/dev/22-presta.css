@@ -1,0 +1,61 @@
+
+
+/* @group Prestations */
+
+.ul-presta li {
+	border: 0px solid #333;
+	margin-bottom: 1em;
+	padding: 0.5em 1em;
+/*	background: #eee;*/
+	border-radius: 10px;
+	list-style: none;
+}
+
+.ul-presta li:before {
+	font-family: 'cowork';
+	content: "\e610";
+	color: #e74f4e;
+	speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		font-size: 140%;
+	
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		
+		padding-right: 0.6em;
+		display: block;
+		float: left;
+}
+
+.ul-presta li#wifi:before { 
+	content: "\e600";
+}
+.ul-presta li#printer:before { 
+	content: "\e602";
+}
+.ul-presta li#cafe:before { 
+	content: "\e60a";
+}
+.ul-presta li#cuisine:before { 
+	content: "\e603";
+}
+.ul-presta li#salle:before { 
+	content: "\e60f";
+}
+.ul-presta li#casier:before { 
+	content: "\e604";
+}
+.ul-presta li#beamer:before { 
+	content: "\e609";
+}
+.ul-presta li#acces:before { 
+	content: "\e606";
+}
+
+/* @end */
+

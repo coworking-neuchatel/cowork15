@@ -1,0 +1,373 @@
+/* @override 
+	http://coworking-neuchatel.ch/wp-content/themes/cowork15/css/dev/20-custom.css */
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/*
+ Media Queries Breakpoints:
+ 
+ From 1020px: Desktop Menu
+ From 1230px: Wide Desktop
+ 
+*/
+
+.hidden {
+	display: none;
+}
+
+.admin-bar .admin-visible {
+	display: block;
+}
+
+
+
+blockquote {
+	font-size: 120%;
+	line-height: 1.2;
+}
+
+
+
+
+.small {
+	font-size: 86%;
+}
+
+
+/* Entry Title */
+.entry-title,
+.page-title {
+	text-transform: uppercase;
+	text-transform: inherit;	
+}
+
+
+h1.site-title a {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	border: 0px solid red;
+	display: block;
+	width: 237px;
+	height: 83px;
+	background-image: url(../../img/icons/logo-white.png);
+	background-size: 237px 73px;
+	background-repeat: no-repeat;
+}
+
+
+.menu-toggle {
+	color: #fff;
+	line-height: 1.5;
+}
+
+.alignleft {
+    margin-bottom: 20px;
+}
+
+.form-allowed-tags {
+	display: none;
+}
+
+.modify-link {
+	clear: both;
+	padding-bottom: 0;
+}
+
+@media screen and (min-width: 1020px) {	
+
+		.site-branding {
+			width: 200px;
+			margin-left: 30px;
+/*			overflow: hidden;*/
+			border: 0px solid #333;
+		}
+		
+		h1.site-title a {
+			width: 200px;
+			height: 62px;
+			background-size: 200px 62px;
+		}
+		
+		.main-navigation {
+			width: 720px;
+/*			background: #f0f;*/
+		}
+		
+		.menu-primary li:last-child {
+			margin-right: 0;
+		}
+
+		.hero-image .site-header {
+			background: rgba(0, 0, 0, 0.425);
+			text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+		}
+		
+		.menu-primary a {
+			border: 1px solid #fff;
+			padding: 0.3em 0.5em 0.5em 0.5em;
+			text-transform: lowercase;
+		}
+		
+		.menu-primary a:hover {
+			background: rgba(0, 0, 0, 0.2);
+		}
+		
+		.main-navigation li {
+			margin-right: 18px;
+		}
+}
+
+@media screen and (min-width: 1230px) {
+		
+		h1.site-title a {
+			width: 237px;
+			height: 83px;
+			background-size: 237px 73px;
+		}
+		
+		.site-branding {
+					width: 240px;
+					margin-left: 72px;
+				}
+				
+				.main-navigation {
+					width: 800px;
+		/*			background: #f0f;*/
+				}
+}
+
+
+
+/* @group Official Button Style */
+
+.more-link-plus,
+.front-item .more-link,
+.biblio-tag-cloud .cat-item a {
+	padding: 12px 24px;
+	background: #e74f4e;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	margin: 10px 10px 0px 10px;
+}
+
+.more-link-plus:hover,
+.more-link-plus:focus,
+.more-link-plus:active,
+.front-item .more-link:hover,
+.front-item .more-link:focus,
+.front-item .more-link:active,
+.biblio-tag-cloud .cat-item a:hover,
+.biblio-tag-cloud .cat-item a:focus,
+.biblio-tag-cloud .cat-item a:active {
+	background: #242424;
+	color: #fff;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+
+/* @group Wysija */
+
+/* button styles */
+.entry-content input[type="submit"],
+.widget_wysija_cont .wysija-submit,
+.ugc-input-wrapper .btn {
+	padding: 0.2em 0.7em 0.2em 0.7em;
+}
+
+p.wysija-after-comment {
+	padding: 1em;	
+/*	font-size: 160%;*/
+}
+
+/* @end */
+
+/* @group Red Circle */
+
+.red-circle .hero .page-title {
+	background: rgba(222, 52, 51, 0.59);
+	border-radius: 5em;
+	width: 5em;
+	height: 5em;
+	line-height: 5;
+}
+
+.blog .hero .page-title {
+	width: 4em;
+	height: 4em;
+	line-height: 4;
+}
+
+.page-id-12 .hero .page-title {
+	font-size: 2em;
+	width: 6em;
+	height: 6em;
+	line-height: 6;
+}
+
+/* @end */
+
+/* @group Calendar */
+
+.icalprop,
+#calendar_views{
+	display: none;
+}
+
+/*
+.dayheaders .saturday,
+.dayheaders .sunday,
+#events_wrap table td.day6, 
+table.ical td.day7 {
+	display: none;
+}*/
+
+.largecalendar caption {
+	margin-top: 0.5em;
+	margin-bottom: 0.8em;
+}
+
+/* @end */
+
+/* @group Powered By */
+
+.powered-by {
+	background: #e74f4e;
+	padding: 0;
+	margin: 0px;
+	text-align: center;
+}
+
+.powered-by .widgettitle {
+	text-transform: inherit;
+	color: #fff;
+}
+
+.powered-by .widget_nav_menu li {
+	border-top: 0px;
+	border-bottom: 0px;
+}
+
+.powered-by .widget_nav_menu a {
+	color: #fff;
+	
+}
+
+.powered-by li.logo-infoclic a {
+		background: url(../../img/icons/logo-infoclic.png);
+		width: 303px;
+		height: 93px;
+}
+
+.powered-by li.logo-think2make {
+	margin-top: 0.5em;
+}
+
+.powered-by li.logo-ms-studio {
+	padding-bottom: 1em;
+}
+
+.powered-by li.logo-think2make a {
+		background: url(../../img/icons/logo-think2make.png);
+		width: 292px;
+		height: 56px;
+}
+
+.powered-by li.logo-ms-studio a {
+		background: url(../../img/icons/logo-ms-studio.png);
+		width: 230px;
+		height: 73px;
+}
+
+.powered-by li.logo-infoclic a,
+.powered-by li.logo-think2make a,
+.powered-by li.logo-ms-studio a {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.type-page .edit-link {
+	display: none;
+}
+
+
+/* @end */
+
+/* @group Connected Members */
+
+.header-member-menu {
+	width: 100%;
+	padding: 0.5em 1em;
+	background: #f1f0f0;;
+}
+
+.member-navigation ul {
+	margin-bottom: 0px;
+}
+
+.member-navigation li {
+	display: inline;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+
+.member-navigation li::after {
+	content: " | ";
+	color: #e74f4e;
+}
+    
+.member-navigation a {
+	font-family: 'hk-super', Helvetica, Arial, sans-serif;
+}
+
+body.logged-in #menu-item-931 {
+	display: none;
+}
+
+/* @end */
+
+/* Wysija Tables */
+#wysija-subscriptions table,
+#wysija-subscriptions th,
+#wysija-subscriptions td {
+	border-color: white;
+}
+
+.album-pinterest p {
+	width: 100%;
+	float: left;
+}
+
+.widget_wpshower_index_code .widget-title {
+	font-size: 140%;
+}
+.widget_wpshower_index_code .textwidget {
+	font-size: 120%;
+	line-height: 1.3;
+}
+
+/* @end */
+
+/* @group Page Contact */
+
+.page-id-23 .tiled-gallery {
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);;
+}
+
+/* @end */

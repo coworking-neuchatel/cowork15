@@ -1,0 +1,304 @@
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+14.0 - Jetpack
+	14.1 - Contact Form
+	14.2 - Galleries
+	14.3 - Infinite Scroll
+	14.4 - Sharedaddy
+	14.5 - Responsive Videos
+	14.6 - Widgets
+	
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+14.0 Jetpack
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+14.1 Contact Form
+--------------------------------------------------------------*/
+.hentry .contact-form label {
+	margin-bottom: 0;
+	font-weight: inherit;
+}
+.hentry .contact-form label.checkbox,
+.hentry .contact-form label.radio {
+	margin-bottom: 0;
+	font-weight: inherit;
+}
+.hentry .contact-form label span {
+	color: #d9321f;
+}
+.hentry .contact-form input[type="text"],
+.hentry .contact-form input[type="email"],
+.hentry .contact-form textarea {
+	margin-bottom: 24px;
+	width: 100%;
+	max-width: 100%;
+}
+.hentry .contact-form div .clear-form:last-of-type {
+	margin-bottom: 24px;
+}
+
+/*--------------------------------------------------------------
+14.2 Galleries
+--------------------------------------------------------------*/
+.hentry .slideshow-window,
+.hentry .tiled-gallery {
+	margin: 0 0 24px;
+}
+.hentry .slideshow-window {
+	background: #f1f0f0;
+	border: 24px solid #f1f0f0;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.hentry .slideshow-slide img {
+	vertical-align: top;
+}
+.hentry .slideshow-slide-caption {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	text-shadow: none;
+}
+
+
+/* @group Jetpack Carousel */
+
+#jp-carousel-comments-loading { 
+	display: none !important; 
+}
+.jp-carousel-image-meta {
+	display: none;
+}
+
+.sd-sharing-enabled:not(#jp-post-flair), 
+.jetpack-likes-widget-wrapper, 
+.sharedaddy.sd-block.sd-gplus, 
+.sd-rating, div#jp-relatedposts {
+	border-color: #e74f4e;
+}
+
+/* @end */
+
+
+/*--------------------------------------------------------------
+14.3 Infinite Scroll
+--------------------------------------------------------------*/
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+#infinite-footer {
+	z-index: 9999;
+}
+#infinite-footer .container {
+	padding: 0;
+	background: #403f3f;
+	border: 0;
+	color: #d2cfcf;
+}
+#infinite-footer .blog-credits,
+#infinite-footer .blog-info {
+	padding: 6px 24px;
+	color: inherit;
+	font-size: 0.875em;
+	line-height: 1.71429em;
+}
+#infinite-footer .blog-credits a,
+#infinite-footer .blog-info a {
+	color: #fff;
+	font-size: inherit;
+}
+#infinite-footer .blog-credits a:hover,
+#infinite-footer .blog-credits a:focus,
+#infinite-footer .blog-credits a:active,
+#infinite-footer .blog-info a:hover,
+#infinite-footer .blog-info a:focus,
+#infinite-footer .blog-info a:active {
+	color: #d2cfcf;
+	text-decoration: none;
+}
+#infinite-footer .blog-info a {
+	text-transform: uppercase;
+}
+#infinite-handle {
+	margin: 0 0 24px;
+}
+#infinite-handle span {
+	display: inline-block;
+	padding: 12px 24px;
+	margin: 0;
+	background: #e74f4e;
+	color: #fff;
+	font-size: inherit;
+	font-weight: bold;
+	text-transform: uppercase;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+#infinite-handle span:hover,
+#infinite-handle span:focus,
+#infinite-handle span:active {
+	background: #242424;
+	border-color: #242424;
+	color: #fff;
+}
+.infinite-loader {
+	margin: 0 0 24px;
+	height: 48px;
+}
+.spinner {
+	top: 50% !important;
+}
+
+/*--------------------------------------------------------------
+14.4 Sharedaddy
+--------------------------------------------------------------*/
+.hentry #jp-post-flair {
+	padding: 0;
+}
+.sd-sharing-enabled:not(#jp-post-flair),
+.jetpack-likes-widget-wrapper,
+.sharedaddy.sd-block.sd-gplus,
+.sd-rating,
+div#jp-relatedposts {
+	padding: 24px 24px 0 24px;
+	margin-bottom: 24px;
+	border: 1px solid #f1f0f0;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.hentry div.sharedaddy h3.sd-title {
+	margin-bottom: 24px;
+	font-size: inherit;
+	line-height: inherit;
+}
+.comment .pd-rating,
+.hentry .pd-rating,
+.hentry div.sharedaddy .sd-content ul,
+.sharedaddy.sd-block.sd-gplus .sd-content {
+	margin-bottom: 24px !important;
+}
+.hentry .post-likes-widget {
+	margin-bottom: 24px;
+	position: inherit !important;
+	top: auto !important;
+}
+.hentry div#jp-relatedposts h3.jp-relatedposts-headline {
+	margin-bottom: 24px;
+	font-size: inherit;
+	line-height: inherit;
+}
+.hentry .pd-rating + br,
+.hentry div.sharedaddy h3.sd-title:before,
+.hentry div#jp-relatedposts h3.jp-relatedposts-headline em:before {
+	display: none;
+}
+.hentry div#jp-relatedposts div.jp-relatedposts-items p {
+	font-size: 0.875em;
+	line-height: 1.71429em;
+}
+.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post,
+.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post-context {
+	opacity: 1;
+}
+.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post {
+	margin-bottom: 24px;
+}
+.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post-context {
+	color: #757575;
+}
+.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post-title {
+	font-weight: bold;
+	font-size: 0.875em;
+	line-height: 1.71429em;
+}
+.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post-title a {
+	font-weight: inherit;
+	text-decoration: none !important;
+}
+.hentry div#jp-relatedposts div.jp-relatedposts-items span.jp-relatedposts-post-title {
+	font-size: inherit;
+	line-height: inherit;
+}
+.hentry .pd-rating {
+	line-height: 1;
+}
+.hero .sd-sharing-enabled:not(#jp-post-flair),
+.hero .jetpack-likes-widget-wrapper,
+.hero .sd-rating {
+	background: rgba(0, 0, 0, 0.3);
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------------------------------------------------
+14.5 Responsive Videos
+--------------------------------------------------------------*/
+.jetpack-video-wrapper {
+	margin: 0 0 24px;
+}
+
+/*--------------------------------------------------------------
+14.6 Widgets
+--------------------------------------------------------------*/
+/* Display WordPress Posts */
+.widget_jetpack_display_posts_widget .jetpack-display-remote-posts h4,
+.widget_jetpack_display_posts_widget .jetpack-display-remote-posts p {
+	margin: 0 0 24px !important;
+	font-size: inherit !important;
+	line-height: inherit !important;
+}
+
+/* Gravatar Profile */
+.widget-grofile > img {
+	display: block;
+	margin: 0 0 24px;
+}
+.widget.widget-grofile h4 {
+	margin: 0 auto 17px;
+}
+.widget.widget-grofile > h4 {
+	margin-bottom: 24px;
+	font-size: inherit;
+	font-weight: normal;
+}
+
+/* RSS Links */
+.widget_rss_links ul {
+	list-style: none;
+}
+.widget_rss_links li {
+	padding: 12px 0;
+	border-top: 1px solid #f1f0f0;
+}
+.widget_rss_links li:first-child {
+	padding-top: 0;
+	border-top: 0;
+}
+.widget_rss_links li:last-child {
+	padding-bottom: 0;
+}
+.widget_rss_links p a {
+	display: inline-block;
+	vertical-align: middle;
+}
+.widget_rss_links p a:hover img,
+.widget_rss_links p a:focus img,
+.widget_rss_links p a:active img {
+	opacity: 0.7;
+}
+.widget_rss_links p img {
+	display: block;
+}
+
