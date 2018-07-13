@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+5.2 Pagination
+--------------------------------------------------------------*/
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	padding: 24px;
+	margin: 0 0 24px;
+	overflow: hidden;
+	border: 1px solid #f1f0f0;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.site-main .post-navigation {
+	padding-right: 0;
+	padding-left: 0;
+	border-right: 0;
+	border-left: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font-size: 0.875em;
+	line-height: 1.71429em;
+}
+.site-main .post-navigation .meta-nav {
+	display: block;
+	color: #757575;
+	text-transform: uppercase;
+}
+.site-main .post-navigation a + a {
+	display: block;
+	padding-top: 12px;
+	margin-top: 12px;
+	border-top: 1px solid #f1f0f0;
+}
+
+@media screen and (min-width: 768px) {	
+	/* Pagination */
+	.site-main .comment-navigation,
+	.site-main .paging-navigation,
+	.site-main .post-navigation {
+		margin-bottom: 48px;
+	}
+	.comment-navigation .nav-previous,
+	.paging-navigation .nav-previous {
+		float: left;
+		width: 50%;
+	}
+	.comment-navigation .nav-next,
+	.paging-navigation .nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1020px) {	
+	
+	/* Pagination */
+	.site-main .comment-navigation,
+	.site-main .paging-navigation,
+	.site-main .post-navigation {
+		margin-bottom: 72px;
+	}
+
+}

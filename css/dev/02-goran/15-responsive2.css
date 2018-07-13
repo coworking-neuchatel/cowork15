@@ -1,0 +1,57 @@
+
+/*--------------------------------------------------------------
+15.0 - Responsive
+	15.1 - x >= 600px
+	15.2 - x >= 768px
+	15.3 - x >= 1020px
+	15.4 - x >= 1230px
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+15.2 x >= 768px
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {	
+
+	/* Layout */
+
+	.archive .hentry,
+	.blog .hentry,
+	.search .hentry,
+	.content-area,
+	.featured-page,
+	.featured-page-area,
+	.footer-widget-area,
+	.front-page-widget-area,
+	.grid,
+	.grid-wrapper,
+	.widget,
+	.widget-area {
+		padding-top: 48px;
+	}
+	.content-area,
+	.featured-page-area,
+	.footer-widget-area,
+	.front-page-widget-area,
+	.grid-area,
+	.site-branding,
+	.site-footer,
+	.widget-area {
+		padding-right: 48px;
+		padding-left: 48px;
+	}
+	.comment-list,
+	.featured-page,
+	.grid,
+	.widget {
+		padding-bottom: 24px;
+	}
+	
+	/* Content */
+	
+	
+	
+
+
+}
+

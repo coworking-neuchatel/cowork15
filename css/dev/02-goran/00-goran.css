@@ -347,6 +347,14 @@ li > ol {
 	margin-bottom: 0;
 	margin-left: 5%;
 }
+
+@media screen and (min-width: 600px) {
+	li > ul,
+	li > ol {
+		margin-left: 24px;
+	}
+}	
+
 dt {
 	font-weight: bold;
 }

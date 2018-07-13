@@ -18,6 +18,13 @@
 .error404 .page-content {
 	margin: 0 0 24px;
 }
+
+@media screen and (min-width: 768px) {
+	.error404 .page-content form {
+		padding-bottom: 24px;
+	}
+}
+
 .byline,
 .updated {
 	display: none;
@@ -41,6 +48,14 @@
 .no-results {
 	margin: 0;
 }
+
+@media screen and (min-width: 768px) {	
+	.hentry {
+		margin-bottom: 24px;
+	}
+}
+
+
 .archive .hentry,
 .blog .hentry,
 .search .hentry {
@@ -82,6 +97,7 @@
 }
 
 /* Post Thumbnail */
+
 .post-thumbnail {
 	position: relative;
 	display: inline-block;
@@ -94,6 +110,40 @@
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
+
+@media screen and (min-width: 600px) {
+
+	.archive:not(.no-sidebar) .post-thumbnail,
+	.blog:not(.no-sidebar) .post-thumbnail,
+	.search:not(.no-sidebar) .post-thumbnail,
+	.single:not(.no-sidebar) .post-thumbnail {
+		width: 600px;
+		margin-left: -24px;
+	}
+	.archive:not(.no-sidebar) .post-thumbnail img,
+	.blog:not(.no-sidebar) .post-thumbnail img,
+	.search:not(.no-sidebar) .post-thumbnail img,
+	.single:not(.no-sidebar) .post-thumbnail img {
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+}
+
+
+@media screen and (min-width: 768px) {	
+	
+	.archive:not(.no-sidebar) .post-thumbnail,
+	.blog:not(.no-sidebar) .post-thumbnail,
+	.search:not(.no-sidebar) .post-thumbnail,
+	.single:not(.no-sidebar) .post-thumbnail {
+		width: 768px;
+		margin-left: -48px;
+	}
+}
+
+
+
 
 /* Entry Title */
 .entry-title,
@@ -185,12 +235,23 @@
 	color: #fff;
 }
 
+
 /* Hero */
 .hero {
 	padding: 24px;
 	background-color: #e74f4e;
 /*	background-color: #fff;*/
 }
+
+@media screen and (min-width: 768px) {	
+	
+	.hero {
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+
+}
+
 .hero-image .hero {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -232,8 +293,29 @@ body[class*="front-page"] .hero .page-title {
 	text-align: inherit;
 }
 
+@media screen and (min-width: 600px) {
+
+	body.hero-image .hero,
+	body[class*="front-page"] .hero {
+		padding: 48px 24px;
+	}
+	
+}
+
+@media screen and (min-width: 768px) {	
+
+	body.hero-image .hero,
+	body[class*="front-page"] .hero {
+		padding: 96px 0;
+	}
+	
+}
+
+
+
 
 /* Grid Page & Featured Page */
+
 .featured-page,
 .grid {
 	padding-top: 24px;
@@ -306,6 +388,15 @@ body[class*="front-page"] .hero .page-title {
 .comments-area {
 	margin: 0 0 24px;
 }
+
+@media screen and (min-width: 768px) {	
+
+	.comments-area {
+		margin-bottom: 48px;
+	}
+
+}
+
 .comment-list {
 	list-style: none;
 	margin: 0;

@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Pagination
+	5.3 - Primary Navigation
+	5.4 - Dropdown Toggle
+	5.5 - Footer Navigation
+	5.6 - Social Navigation
+
+--------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+a {
+	color: #e74f4e;
+	font-weight: bold;
+	text-decoration: none;
+	-moz-transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+a:visited {
+	font-weight: normal;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #242424;
+	outline: none;
+}
+
+/* Button Styles */
+
+a.button,
+a.button-minimal {
+	display: inline-block;
+	padding: 10px 22px;
+	border: 2px solid #e74f4e;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+a.button {
+	background: #e74f4e;
+	color: #fff;
+	text-shadow: none;
+}
+a.button:hover,
+a.button:focus,
+a.button:active {
+	background: #242424;
+	border-color: #242424;
+	color: #fff;
+}
+a.button-minimal {
+	color: #e74f4e;
+}
+a.button-minimal:hover,
+a.button-minimal:focus,
+a.button-minimal:active {
+	background: #e74f4e;
+	border-color: #e74f4e;
+	color: #fff;
+}
+
+/* Hero */
+.hero .entry-header {
+	margin-bottom: 24px;
+}
+.hero .entry-content a {
+	color: #fff;
+}
+.hero .entry-content a:hover,
+.hero .entry-content a:focus,
+.hero .entry-content a:active {
+	color: rgba(255, 255, 255, 0.7);
+}
+.hero a.button,
+.hero a.button-minimal {
+	border-color: #fff;
+}
+.hero a.button {
+	background: #fff;
+	color: #242424;
+}
+.hero a.button:hover,
+.hero a.button:focus,
+.hero a.button:active {
+	background: #242424;
+	border-color: #242424;
+	color: #fff;
+}
+.hero a.button-minimal {
+	color: #fff;
+}
+.hero a.button-minimal:hover,
+.hero a.button-minimal:focus,
+.hero a.button-minimal:active {
+	background: #fff;
+	color: #242424;
+}
+
+/* Site Footer & Site Top Content */
+.site-footer a,
+.site-top-content a {
+	color: #fff;
+}
+.site-info a,
+.site-top-content a {
+	font-weight: normal;
+}
+.site-footer a:hover,
+.site-footer a:focus,
+.site-footer a:active,
+.site-top-content a:hover,
+.site-top-content a:focus,
+.site-top-content a:active {
+	color: #d2cfcf;
+}
+.site-top-content a.button,
+.site-top-content a.button-minimal {
+	border-color: #fff;
+}
+.site-top-content a.button:hover,
+.site-top-content a.button:focus,
+.site-top-content a.button:active,
+.site-top-content a.button-minimal:hover,
+.site-top-content a.button-minimal:focus,
+.site-top-content a.button-minimal:active {
+	background: #d2cfcf;
+	border-color: #d2cfcf;
+	color: #242424;
+}
+.site-top-content a.button {
+	background: #fff;
+	color: #242424;
+}
+.site-top-content a.button-minimal {
+	color: #fff;
+}
+

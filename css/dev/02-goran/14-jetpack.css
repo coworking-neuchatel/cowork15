@@ -161,6 +161,20 @@
 	top: 50% !important;
 }
 
+@media screen and (min-width: 768px) {	
+	#infinite-handle,
+	.infinite-loader {
+		margin: 0 0 48px;
+	}	
+}
+
+@media screen and (min-width: 1020px) {	
+	#infinite-handle,
+	.infinite-loader {
+		margin: 0 0 72px;
+	}
+}
+
 /*--------------------------------------------------------------
 14.4 Sharedaddy
 --------------------------------------------------------------*/

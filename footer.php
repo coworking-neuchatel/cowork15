@@ -40,7 +40,7 @@
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
 		<div class="site-info">
-			<!-- Website by <a href="http://ms-studio.net/webdesign/coworking-neuchatel/" rel="designer">ms-studio</a> -->
+			<!-- Website by <a href="https://ms-studio.net/webdesign/coworking-neuchatel/" rel="designer">ms-studio</a> -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
