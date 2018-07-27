@@ -1,4 +1,4 @@
-/* @group Front Page */
+/* Front Page */
 
 .page-template-front-page .hero .entry-content,
 .page-template-front-page-cdf .hero .entry-content {
@@ -41,11 +41,18 @@
 }
 
 .front-item {
-	padding: 1em 2em;
+	padding: 0.5em 1em;
+}
+
+@media only screen and (min-width: 1020px) {
+	.front-item {
+		padding: 1em 2em;
+	}
 }
 
 .front-item .title-style {
 	text-align: center;
+	color: #e74f4e;
 }
 
 .iframe-container .h2,
@@ -134,8 +141,3 @@ and (min-width: 1020px) {
 	
 
 }
-
-
-
-
-/* @end */

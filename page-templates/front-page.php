@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'content', 'hero' ); ?>
+		<?php // get_template_part( 'content', 'hero' ); ?>
 
 	<?php endwhile; ?>
 	
@@ -17,11 +17,32 @@ get_header(); ?>
 	
 	<?php
 	
-	// Bloc 1: Prestations
+	/*
+	
+	D'abord quatre sections principales (bloc-a): 
+	
+	- Notre espace
+	- Salle de réunion
+	- Travailler 1 jour
+	- Système de prix (nos formules)
+	
+	*/
+	
+	get_template_part( 'template-parts/front/blocs-a/notre-espace' );
+	
+	get_template_part( 'template-parts/front/blocs-a/salle-reunion' );
+	
+	get_template_part( 'template-parts/front/blocs-a/travailler-1-jour' );
+	
+	get_template_part( 'template-parts/front/blocs-a/nos-formules' );
+		
+			
+	// Bloc: Prestations
 	
 	$custom_query = new WP_Query( array(
 				'post_type' => 'cwn_bloc',
-				'page_id' => 2048, // = Prestations
+				// 'page_id' => 2048, // = Prestations
+				'title' => 'Prestations',
 				'post_status' => array( 'publish' )
 		) ); 
 		
@@ -36,10 +57,8 @@ get_header(); ?>
 				?>
 				<h2 id="prestations" class="h2 title-style"><?php the_title(); ?></a></h2>
 				<?php
-				
-				// content
-				
-				the_content('Read the rest of this entry &raquo;');
+
+				the_content();
 				
 				edit_post_link( __( 'Edit', 'edin' ), '<footer class="entry-footer modify-link"><span class="edit-link">', '</span></footer>' );
 		
@@ -48,14 +67,13 @@ get_header(); ?>
 			?></div><?php
 		
 		endif;
-		wp_reset_postdata();
 		
 		
-		// Bloc 2: TARIFS
+		// Bloc: TARIFS
 		
 			$custom_query = new WP_Query( array(
 						'post_type' => 'cwn_bloc',
-						'page_id' => 2046,
+						'title' => 'Les formules coworking',
 						'post_status' => array( 'publish' )
 				) ); 
 				
@@ -95,7 +113,7 @@ get_header(); ?>
 				
 	$custom_query = new WP_Query( array(
 				'post_type' => 'cwn_bloc',
-				'page_id' => 2047,
+				'title' => 'Autres prestations',
 				'post_status' => array( 'publish' )
 		) ); 
 		

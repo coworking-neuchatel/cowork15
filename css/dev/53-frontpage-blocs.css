@@ -1,0 +1,270 @@
+/* Front Page Blocs */
+
+
+/* Title Styles : Bloc Title */
+
+.bloc-a .title-style {
+	font-size: 1em;
+	background-size: cover;
+	line-height: 120px;
+}
+
+@media only screen and (max-width: 599px) {
+	
+	.bloc-a .title-style:hover {
+		background-color: #ddd;
+		cursor: pointer;
+	}
+	
+	.bloc-a .modify-link {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 600px) {
+	.bloc-a .title-style {
+		background-image: none !important;
+		font-size: 1.5em;
+		line-height: 1.2;
+		margin: 0;
+		padding: 0.5em 0;
+	}
+}
+
+/* Title Styles : Lego Title */
+
+.lego-title {
+	font-size: 1em;
+	line-height: 1.2;
+	margin: 0;
+	cursor: pointer;
+}
+
+.lego-title:hover {
+		color: #e74f4e;
+}
+
+@media only screen and (max-width: 599px) {
+	
+	.lego-title:hover {
+			color: #e74f4e;
+			cursor: pointer;
+	}
+	
+}
+
+@media only screen and (min-width: 600px) {
+
+	.lego-title {
+		margin: 20px 0 10px 0;
+		font-size: 1.5em;
+		line-height: 2em;
+	}
+	
+}
+
+/* 
+
+Show-Hide
+
+En mode mobile:
+On masque le contenu pour ne garder que le titre visible
+*/
+
+.jsactive .bloc-a-content {
+	display: none;
+} 
+.jsactive .lego-content {
+	display: none;
+}
+/* override class: .lego-visible */
+.jsactive .lego-visible .lego-content {
+	display: block;
+}
+
+
+@media only screen and (min-width: 600px) {
+	
+	.jsactive .bloc-a-content,
+	.jsactive .lego .lego-content {
+		display: block;
+	}
+
+}
+
+/* Specific Bloc Styling  */
+
+.lego.lego-visitez-nous .lego-content {
+	display: flex;
+}
+
+.lego-visitez-nous .lego-content {
+	height: 150px;
+	background-size: cover;
+	
+	flex-direction: column;
+	justify-content: center;
+}
+
+.lego-visitez-nous .lego-content a {
+	margin: auto;
+}
+
+.lego-visite-360 .lego-content {
+	height: 150px;
+	position: relative;
+}
+
+
+.lego-carte-google .lego-content {
+	height: 150px;
+}
+
+.lego-visite-360 iframe,
+.lego-carte-google iframe {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+/* @group Gallery */
+
+.lego .gallery {
+	margin-bottom: 0;
+	padding: 0;
+/*	background-color: #e74f4e;*/
+}
+
+.lego-photos .gallery-size-thumbnail {
+	display: flex;
+	height: 100%;
+}
+
+.lego-photos .gallery-item {
+	padding: 0;
+	width: auto;
+	flex: 1 1 auto;
+}
+
+/* Show only first 4 photos */
+.lego-photos .gallery-item:nth-child(1n+5) {
+	display: none;
+}
+
+.lego-photos .gallery-icon,
+.lego-photos .gallery-icon a {
+	height: 100%;
+}
+
+.gallery .gallery-item .gallery-icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.lego-photos a img {
+	opacity: 0.8;
+}
+
+.lego-photos a:hover img {
+	opacity: 1;
+}
+
+/* @end */
+
+
+
+
+/* Layout - two columns */
+
+@media only screen and (min-width: 800px) {
+	
+	.lego-visitez-nous .lego-content,
+	.lego-visite-360 .lego-content,
+	.lego-carte-google .lego-content {
+		height: 300px;
+	}
+	
+	.bloc-a .bloc-quad {
+		
+		/*grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;*/
+	}
+	
+	.bloc-a-notre-espace .bloc-quad {
+		display: grid;
+		grid-template-columns: auto 400px;
+		grid-template-areas: 
+		    "visit   map" 
+				"gallery map" 
+		    "space   map";
+		background-color: #403f3f;
+	}
+	
+	.bloc-a-notre-espace .lego-title {
+		display: none;
+	}
+	
+	
+	.bloc-a-notre-espace .lego-photos {
+		grid-area: gallery;
+		height: 150px;
+	}
+	
+	.bloc-a-notre-espace .lego-photos .lego-content {
+		height: 150px;
+	}
+	
+	
+	.bloc-a-notre-espace .lego-visite-360 {
+		grid-area: space;
+	}
+	.bloc-a-notre-espace .lego-carte-google {
+		grid-area: map;
+	}
+	.lego-carte-google .lego-content {
+		height: 100%;
+	}
+	
+	
+}
+
+/* Layout on very large screens */
+
+@media only screen and (min-width: 1000px) {
+
+	.bloc-a-notre-espace .bloc-quad {
+		display: block;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch
+	}
+	
+	.bloc-a-notre-espace .lego {
+		flex: 1 1 auto;
+		width: 0;
+		height: 100%;
+		min-height: 300px;
+	}
+	
+	/* Photos: make 4x4 square */
+	
+	.bloc-a-notre-espace .lego-photos,
+	.bloc-a-notre-espace .lego-photos .lego-content {
+		height: auto;
+		min-height: 300px;
+	}
+	
+	.lego-photos .gallery-size-thumbnail {
+		flex-wrap: wrap;
+		flex-direction: row;
+		min-height: 300px;
+	}
+	
+	.lego-photos .gallery-item {
+		flex-basis: 50%; 
+	}
+	
+}
+
