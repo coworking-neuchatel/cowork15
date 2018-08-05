@@ -49,40 +49,39 @@
 	
 	/*
 	 * FrontPage Menus
-	 * activate when <= 599 PX
+	 * activate when < 680 PX
 	*/
-	if($(window).innerWidth() <= 599 ) {
 	   
-		 $( ".bloc-a"  ).on("click", ".title-style", function(){
-		 		// find the sibling
-			 var target = $( this ).next(".bloc-a-content");
+	 $( ".bloc-a"  ).on("click", ".title-style", function(){
+	 		
+	 	// find the sibling
+		var target = $( this ).next(".bloc-a-content");
+		if($(window).innerWidth() < 680 ) {
 		   var state = target.data( "toggle" );
 		   if ( state == "open") {
 		     target.hide().data( "toggle", "closed" );
 		   } else {
 		     target.show().data( "toggle", "open" );
 		   }
-		 });
+	 	}
+	 });
+	 
+	 
+	$( ".lego"  ).on("click", ".lego-title", function(){
+	 		
+	 	// find the sibling
+		var target = $( this ).next(".lego-content");
+		if($(window).innerWidth() < 680 ) {
+			var state = target.data( "toggle" );
+			if ( state == "open") {
+			  target.hide().data( "toggle", "closed" );
+			} else {
+			  target.show().data( "toggle", "open" );
+			}
+		}
+	});
 		 
 		 
-		 $( ".lego"  ).on("click", ".lego-title", function(){
-		 		// find the sibling
-		 	 var target = $( this ).next(".lego-content");
-		   var state = target.data( "toggle" );
-		   if ( state == "open") {
-		     target.hide().data( "toggle", "closed" );
-		   } else {
-		     target.show().data( "toggle", "open" );
-		   }
-		 });
-		 
-		  
-		 
-	}
-	
-	
-	
-	
 	/* 
 	 * EmailSpamProtection (jQuery Plugin)
 	 ****************************************************

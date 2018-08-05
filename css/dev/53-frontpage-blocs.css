@@ -1,5 +1,8 @@
 /* Front Page Blocs */
 
+/* Principe des Breakpoints: */
+/* On reste dans le mode purement mobile jusqu'à 680px */
+
 
 /* Title Styles : Bloc Title */
 
@@ -9,7 +12,7 @@
 	line-height: 120px;
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 679px) {
 	
 	.bloc-a .title-style:hover {
 		background-color: #ddd;
@@ -22,30 +25,51 @@
 	
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 680px) {
+	
+	.front-item .title-style {
+		font-weight: 300;
+	}
+	
 	.bloc-a .title-style {
 		background-image: none !important;
-		font-size: 1.5em;
+		font-size: 2em;
+/*		font-weight: 400;*/
 		line-height: 1.2;
+/*		letter-spacing: 0.025em;*/
 		margin: 0;
-		padding: 0.5em 0;
+		padding: 1em 0 0.7em 0;
+		text-align: left;
 	}
+	
+	
 }
 
 /* Title Styles : Lego Title */
+/* used as submenu on small screens */
 
 .lego-title {
 	font-size: 1em;
 	line-height: 1.2;
-	margin: 0;
-	cursor: pointer;
+	margin: 0;	
+	padding: 0.25em;
 }
 
-.lego-title:hover {
-		color: #e74f4e;
+.lego-title::before {
+	content: "> ";
+	font-weight: 400;
+	font-size: 0.8em;
 }
 
-@media only screen and (max-width: 599px) {
+.lego:nth-child(odd) .lego-title {
+	background-color: #F8F3E9;
+}
+
+@media only screen and (max-width: 679px) {
+	
+	.lego-title {
+		cursor: pointer;
+	}
 	
 	.lego-title:hover {
 			color: #e74f4e;
@@ -54,15 +78,18 @@
 	
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 680px) {
 
 	.lego-title {
 		margin: 20px 0 10px 0;
 		font-size: 1.5em;
+		font-weight: 300;
 		line-height: 2em;
 	}
 	
 }
+
+
 
 /* 
 
@@ -84,7 +111,7 @@ On masque le contenu pour ne garder que le titre visible
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 680px) {
 	
 	.jsactive .bloc-a-content,
 	.jsactive .lego .lego-content {
@@ -94,6 +121,10 @@ On masque le contenu pour ne garder que le titre visible
 }
 
 /* Specific Bloc Styling  */
+
+.lego img {
+	display: block;
+}
 
 .lego.lego-visitez-nous .lego-content {
 	display: flex;
@@ -126,6 +157,10 @@ On masque le contenu pour ne garder que le titre visible
 	height: 100%;
 	width: 100%;
 	margin-bottom: 0;
+}
+
+.lego-carte-google .attachment-medium {
+	display: none;
 }
 
 /* @group Gallery */
@@ -165,10 +200,11 @@ On masque le contenu pour ne garder que le titre visible
 
 .lego-photos a img {
 	opacity: 0.8;
+	transition: opacity 0.1s ease-in-out;
 }
 
 .lego-photos a:hover img {
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 /* @end */
@@ -178,7 +214,7 @@ On masque le contenu pour ne garder que le titre visible
 
 /* Layout - two columns */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 680px) {
 	
 	.lego-visitez-nous .lego-content,
 	.lego-visite-360 .lego-content,
@@ -206,10 +242,20 @@ On masque le contenu pour ne garder que le titre visible
 		display: none;
 	}
 	
-	
+	/* Galerie Photos */
 	.bloc-a-notre-espace .lego-photos {
 		grid-area: gallery;
 		height: 150px;
+	}
+	
+	.lego-photos .gallery-item:nth-child(1),
+	.lego-photos .gallery-item:nth-child(3) {
+		background-color: #e74f4e;
+	}
+	
+	.lego-photos .gallery-item:nth-child(1) img,
+	.lego-photos .gallery-item:nth-child(3) img {
+		opacity: 0.4;
 	}
 	
 	.bloc-a-notre-espace .lego-photos .lego-content {
@@ -223,10 +269,40 @@ On masque le contenu pour ne garder que le titre visible
 	.bloc-a-notre-espace .lego-carte-google {
 		grid-area: map;
 	}
+	/* Carte Google */
+	
+	.jsactive .lego-carte-google {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	
 	.lego-carte-google .lego-content {
 		height: 100%;
 	}
 	
+	.lego-carte-google iframe,
+	.lego-carte-google .attachment-medium {
+		flex: 1 1 auto;
+		height: auto;
+	}
+	
+	.lego-carte-google .attachment-medium {
+		flex-basis: 30%;
+		height: 30%;
+		width: 100%;
+		object-fit: cover;
+	}
+	
+	.lego-carte-google iframe {
+		flex-basis: 70%;
+		height: 70%;
+	}
+	
+	
+	.lego-carte-google .attachment-medium {
+		display: block;
+	}
 	
 }
 
@@ -248,22 +324,53 @@ On masque le contenu pour ne garder que le titre visible
 		min-height: 300px;
 	}
 	
+	.bloc-a-notre-espace .lego {
+		height: 400px;
+	}
+	
+	.lego-visitez-nous .lego-content, 
+	.lego-visite-360 .lego-content, 
+	.lego-carte-google .lego-content,
+	.bloc-a-notre-espace .lego-photos,
+	.bloc-a-notre-espace .lego-photos .lego-content {
+		height: 100%;
+	}
+	
+	
 	/* Photos: make 4x4 square */
 	
 	.bloc-a-notre-espace .lego-photos,
-	.bloc-a-notre-espace .lego-photos .lego-content {
+	.bloc-a-notre-espace .lego-photos .lego-content,
+	.lego-photos .gallery-size-thumbnail {
 		height: auto;
-		min-height: 300px;
+		min-height: 400px;
 	}
 	
 	.lego-photos .gallery-size-thumbnail {
 		flex-wrap: wrap;
 		flex-direction: row;
-		min-height: 300px;
 	}
 	
 	.lego-photos .gallery-item {
 		flex-basis: 50%; 
+	}
+	
+	.lego-photos .gallery-item:nth-child(1n) {
+		background-color: #fff;
+	}
+	
+	.lego-photos .gallery-item:nth-child(1) img {
+		opacity: 0.8;
+	}
+
+	.lego-photos .gallery-item:nth-child(1),
+	.lego-photos .gallery-item:nth-child(4) {
+		background-color: #e74f4e;
+	}
+	
+	.lego-photos .gallery-item:nth-child(1) img,
+	.lego-photos .gallery-item:nth-child(4) img {
+		opacity: 0.4;
 	}
 	
 }
