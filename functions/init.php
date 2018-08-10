@@ -75,4 +75,16 @@ endif; // cowork_register_sidebar
   add_filter('the_title', 'the_title_trim');
   
 
+/*
+ * Prevent errors if ACF is disabled
+*/
 
+if ( ! function_exists ( 'get_field' ) ) {
+    function get_field( $key = '' ) {
+        
+        $field = get_post_meta( get_the_ID(), $key, true );
+        
+        return $field;
+        
+    }
+}
