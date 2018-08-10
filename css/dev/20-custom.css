@@ -44,6 +44,16 @@ blockquote {
 }
 
 
+.site-title {
+	font-size: 1em;
+	text-align: left;
+	letter-spacing: 0.08em;
+}
+
+/* Show Retina Logo */
+
+@media only screen and (min-width: 680px) {
+
 h1.site-title a {
 	font: 0/0 a;
 	text-shadow: none;
@@ -55,6 +65,8 @@ h1.site-title a {
 	background-image: url(../../img/icons/logo-white.png);
 	background-size: 237px 73px;
 	background-repeat: no-repeat;
+}
+
 }
 
 

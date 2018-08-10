@@ -41,18 +41,29 @@
 }
 
 .front-item {
-	padding: 0.5em 1em;
+	padding: 0;
+}
+
+.front-item-section {
+	margin-top: 1em;
+}
+
+@media only screen and (min-width: 680px) {
+	.front-item {
+		padding: 0.5em 1em;
+	}
 }
 
 @media only screen and (min-width: 1020px) {
 	.front-item {
-		padding: 1em 2em;
+		padding: 0em 2em;
 	}
 }
 
 .front-item .title-style {
 	text-align: center;
 	color: #e74f4e;
+	font-weight: 300;
 }
 
 .iframe-container .h2,

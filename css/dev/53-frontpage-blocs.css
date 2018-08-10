@@ -4,21 +4,35 @@
 /* On reste dans le mode purement mobile jusqu'à 680px */
 
 
+
 /* Title Styles : Bloc Title */
 
 .bloc-a .title-style {
-	font-size: 1em;
+	font-size: 1.5em;
+	font-weight: 300;
 	background-size: cover;
 	line-height: 120px;
+	margin: 0;
+}
+
+.bloc-a .title-style:hover {
+	
 }
 
 @media only screen and (max-width: 679px) {
 	
-	.bloc-a .title-style:hover {
-		background-color: #ddd;
+	.bloc-a .title-style {
 		cursor: pointer;
+		font-size: 2em;
 	}
 	
+	.state-open .title-style,
+	.bloc-a .title-style:hover {
+		background-color: #e74f4e;
+		color: #fff;
+		background-image: none !important;
+	}
+
 	.bloc-a .modify-link {
 		display: none;
 	}
@@ -27,16 +41,9 @@
 
 @media only screen and (min-width: 680px) {
 	
-	.front-item .title-style {
-		font-weight: 300;
-	}
-	
 	.bloc-a .title-style {
 		background-image: none !important;
-		font-size: 2em;
-/*		font-weight: 400;*/
 		line-height: 1.2;
-/*		letter-spacing: 0.025em;*/
 		margin: 0;
 		padding: 1em 0 0.7em 0;
 		text-align: left;
@@ -52,7 +59,7 @@
 	font-size: 1em;
 	line-height: 1.2;
 	margin: 0;	
-	padding: 0.25em;
+	padding: 0.5em 0.25em;
 }
 
 .lego-title::before {
@@ -71,9 +78,14 @@
 		cursor: pointer;
 	}
 	
+	.state-open > .lego-title,
 	.lego-title:hover {
-			color: #e74f4e;
-			cursor: pointer;
+		color: #e74f4e;
+	}
+	
+	.state-open > .lego-title::before {
+		content: "v ";
+		transform: rotate(90deg);
 	}
 	
 }
@@ -89,7 +101,11 @@
 	
 }
 
+/* Bloc Content Style*/
 
+.bloc-a-content {
+	border-left: 0.7em solid #6FE8FF;
+}
 
 /* 
 
@@ -122,9 +138,24 @@ On masque le contenu pour ne garder que le titre visible
 
 /* Specific Bloc Styling  */
 
+.lego-details .lego-content {
+	padding: 1em;
+	font-size: 0.78em;
+}
+
+@media only screen and (min-width: 680px) {
+
+	.lego-details .lego-content {
+		font-size: 0.9em;
+	}
+}
+
 .lego img {
 	display: block;
 }
+
+
+/* Visitez-nous */
 
 .lego.lego-visitez-nous .lego-content {
 	display: flex;
@@ -150,6 +181,11 @@ On masque le contenu pour ne garder que le titre visible
 
 .lego-carte-google .lego-content {
 	height: 150px;
+}
+
+.lego-carte-google iframe {
+/*	background-image: url("../../img/frontpage/cowork-google-map.jpg");
+	background-size: cover;*/
 }
 
 .lego-visite-360 iframe,
@@ -216,7 +252,11 @@ On masque le contenu pour ne garder que le titre visible
 
 @media only screen and (min-width: 680px) {
 	
-	.lego-visitez-nous .lego-content,
+	.lego-visitez-nous .lego-content {
+		min-height: 300px;
+	}
+	
+	
 	.lego-visite-360 .lego-content,
 	.lego-carte-google .lego-content {
 		height: 300px;
@@ -236,9 +276,11 @@ On masque le contenu pour ne garder que le titre visible
 				"gallery map" 
 		    "space   map";
 		background-color: #403f3f;
+		border-left: 0;
 	}
 	
-	.bloc-a-notre-espace .lego-title {
+	.bloc-a-notre-espace .lego-title,
+	.bloc-salle-reunion .lego-title {
 		display: none;
 	}
 	
@@ -248,13 +290,13 @@ On masque le contenu pour ne garder que le titre visible
 		height: 150px;
 	}
 	
-	.lego-photos .gallery-item:nth-child(1),
-	.lego-photos .gallery-item:nth-child(3) {
+	.bloc-a-notre-espace .gallery-item:nth-child(1),
+	.bloc-a-notre-espace .gallery-item:nth-child(3) {
 		background-color: #e74f4e;
 	}
 	
-	.lego-photos .gallery-item:nth-child(1) img,
-	.lego-photos .gallery-item:nth-child(3) img {
+	.bloc-a-notre-espace .gallery-item:nth-child(1) img,
+	.bloc-a-notre-espace .gallery-item:nth-child(3) img {
 		opacity: 0.4;
 	}
 	
@@ -359,19 +401,77 @@ On masque le contenu pour ne garder que le titre visible
 		background-color: #fff;
 	}
 	
-	.lego-photos .gallery-item:nth-child(1) img {
+	.bloc-a-notre-espace .gallery-item:nth-child(1) img {
 		opacity: 0.8;
 	}
 
-	.lego-photos .gallery-item:nth-child(1),
-	.lego-photos .gallery-item:nth-child(4) {
+	.bloc-a-notre-espace .gallery-item:nth-child(1),
+	.bloc-a-notre-espace .gallery-item:nth-child(4) {
 		background-color: #e74f4e;
 	}
 	
-	.lego-photos .gallery-item:nth-child(1) img,
-	.lego-photos .gallery-item:nth-child(4) img {
+	.bloc-a-notre-espace .gallery-item:nth-child(1) img,
+	.bloc-a-notre-espace .gallery-item:nth-child(4) img {
 		opacity: 0.4;
 	}
 	
 }
 
+/* Layout for bloc-basic 
+ Used by: Salle de réunion
+ 
+ We have three items:
+ - lego-visitez-nous
+ - lego-details
+ - lego-photos
+ 
+*/
+
+@media only screen and (min-width: 680px) {
+	
+	.front-item .bloc-basic {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		    "details   photo" 
+				"action    photo";
+		background-color: #fff;
+		border-left: 2em solid #FF6F6F;
+	}
+	
+	.bloc-basic .lego-action {
+		grid-area: action;
+	}
+	
+	.lego-action .lego-content {
+		min-height: 150px;
+	}
+	
+	.bloc-basic .lego-details {
+		grid-area: details;
+		background-color: #F8F3E9;
+	}
+	
+	.bloc-basic .lego-details .lego-content {
+		padding: 2em;
+	}
+	
+	.bloc-basic .lego-photos {
+		grid-area: photo;
+	}
+	
+	.bloc-basic .lego-photos .lego-content {
+		height: 100%;
+	}
+	
+	.bloc-basic .lego-photos .gallery-item {
+		display: none;
+	}
+	
+	.bloc-basic .lego-photos .gallery-item:nth-child(1) {
+		display: block;
+	}
+	
+	/* Styles Salle Réunion */
+	
+}

@@ -13,7 +13,7 @@ $custom_query = new WP_Query( array(
 
 if ($custom_query->have_posts()) : 
 
-	?><section class="front-item bloc-a"><?php
+	?><?php
 	
 	while( $custom_query->have_posts() ) : $custom_query->the_post();
 	
@@ -24,6 +24,7 @@ if ($custom_query->have_posts()) :
 	- Réserver
 	- Photos
 	- Détails
+	- Tarifs
 	
 	Get Custom Fields:
 	- salle_reunion_cover (image)
@@ -51,6 +52,9 @@ if ($custom_query->have_posts()) :
 			$cover_img_l_style = ' style="background-image:url('.$cover_img_l[0].')" ';
 	
 		}
+		
+		
+		echo '<section class="front-item bloc-a bloc-salle-reunion">';
 			
 		?>
 		
@@ -58,7 +62,7 @@ if ($custom_query->have_posts()) :
 		
 		<div class="bloc-a-content bloc-basic">
 
-		<div class="lego lego-visitez-nous lego-visible">
+		<div class="lego lego-visitez-nous lego-action lego-visible">
 			<div class="lego-content" <?php echo $cover_img_l_style; ?>>
 				<?php 
 					
@@ -86,7 +90,7 @@ if ($custom_query->have_posts()) :
 				
 				if ( function_exists('ms_studio_gallery') ) {
 				
-				$gallery = ms_studio_gallery( 'salle_reunion_images', 'medium' );
+				$gallery = ms_studio_gallery( 'salle_reunion_images', 'large' );
 				
 				}
 				

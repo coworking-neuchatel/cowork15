@@ -48,7 +48,7 @@ get_header(); ?>
 		
 		if ($custom_query->have_posts()) : 
 		
-			?><div class="front-item"><?php
+			?><div class="front-item front-item-section"><?php
 		
 		while( $custom_query->have_posts() ) : $custom_query->the_post();
 		

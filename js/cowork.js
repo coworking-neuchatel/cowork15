@@ -46,16 +46,16 @@
 	$( window ).load( hero_image ).resize( hero_image );
 	
 	
-	
 	/*
 	 * FrontPage Menus
 	 * activate when < 680 PX
 	*/
 	   
-	 $( ".bloc-a"  ).on("click", ".title-style", function(){
-	 		
-	 	// find the sibling
+	$( ".bloc-a"  ).on("click", ".title-style", function(){
+	 		 	
 		var target = $( this ).next(".bloc-a-content");
+		var parent = $( this ).parent();
+		
 		if($(window).innerWidth() < 680 ) {
 		   var state = target.data( "toggle" );
 		   if ( state == "open") {
@@ -63,21 +63,27 @@
 		   } else {
 		     target.show().data( "toggle", "open" );
 		   }
+			 
+			 parent.toggleClass( "state-open" );
 	 	}
 	 });
 	 
 	 
 	$( ".lego"  ).on("click", ".lego-title", function(){
-	 		
-	 	// find the sibling
+	 	
 		var target = $( this ).next(".lego-content");
+		var parent = $( this ).parent();
+		
 		if($(window).innerWidth() < 680 ) {
 			var state = target.data( "toggle" );
 			if ( state == "open") {
 			  target.hide().data( "toggle", "closed" );
+				
 			} else {
 			  target.show().data( "toggle", "open" );
 			}
+			
+			parent.toggleClass( "state-open" );
 		}
 	});
 		 
