@@ -37,4 +37,24 @@ function cowork_generate_menu($menu_name) {
 
 }
 
+
+/*
+ * Output Favicon
+ */
+ 
+function favicon() {
+//	if ( is_admin() ) {
+//  	echo '<link rel="apple-touch-icon" href="'.get_stylesheet_directory_uri().'/img/favicon/favicon-edit.png" />';
+//  	echo '<link rel="icon" type="image/png" href="'.get_stylesheet_directory_uri().'/img/favicon/favicon-edit.png" />';
+//  }
+ }
+ add_action('wp_head', 'favicon');
+ 
+ function favicon_admin() {
+ 	echo '<link rel="apple-touch-icon" href="'.get_stylesheet_directory_uri().'/img/favicon/favicon-edit.png" />';
+ 	echo '<link rel="icon" type="image/png" href="'.get_stylesheet_directory_uri().'/img/favicon/favicon-edit.png" />';
+ }
+ add_action( 'admin_head', 'favicon_admin' );
+ 
+
 // end of file
