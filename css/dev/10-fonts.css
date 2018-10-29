@@ -1,10 +1,9 @@
 @font-face {
 	font-family: 'cowork';
-	src:url('../../fonts/icomoon-v2/cowork.eot?z3d0a5');
-	src:url('../../fonts/icomoon-v2/cowork.eot?#iefixz3d0a5') format('embedded-opentype'),
-		url('../../fonts/icomoon-v2/cowork.woff?z3d0a5') format('woff'),
-		url('../../fonts/icomoon-v2/cowork.ttf?z3d0a5') format('truetype'),
-		url('../../fonts/icomoon-v2/cowork.svg?z3d0a5#cowork') format('svg');
+	src:url('../../fonts/icomoon-v4/cowork.eot?jtn6wy');
+	src:url('../../fonts/icomoon-v4/cowork.eot?jtn6wy#iefix') format('embedded-opentype'),
+		url('../../fonts/icomoon-v4/cowork.woff?jtn6wy') format('woff'),
+		url('../../fonts/icomoon-v4/cowork.ttf?jtn6wy') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -78,6 +77,28 @@
 }
 .icon-history:before {
 	content: "\e611";
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-hour-glass:before {
+  content: "\e979";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-glass:before {
+  content: "\e9a1";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-coffee:before {
+  content: "\e601";
 }
 
 
