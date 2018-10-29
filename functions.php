@@ -292,7 +292,6 @@ require get_stylesheet_directory() . '/inc/jetpack.php';
 
 require_once('functions/init.php');
 
-require_once('functions/formidable.php');
 
  
  /* WooCommerce Support
