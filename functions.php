@@ -6,7 +6,7 @@
  *
  */
 
-// Change-Detector-XXXXXXXXXXXXXXXXXX - for Espresso.app
+// Change-Detector-XXXXXXXXXXXXXXXXXXXXXXXXXXX - for Espresso.app
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -199,7 +199,13 @@ function cowork_scripts() {
 
 	wp_enqueue_script( 'cowork-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20140807', true );
 
-	wp_enqueue_script( 'cowork-script', get_stylesheet_directory_uri() . '/js/cowork.js', array( 'jquery' ), '20140808', true );
+	wp_enqueue_script( 
+		'cowork-script', 
+		get_stylesheet_directory_uri() . '/js/cowork.js', 
+		array( 'jquery' ), 
+		'20180815', 
+		true 
+	);
 }
 add_action( 'wp_enqueue_scripts', 'cowork_scripts', 11 );
 
@@ -241,7 +247,7 @@ if ( $host != 'coworking-neuchatel.ch' ) {
  		// PROD: the MAIN stylesheet - combined and minified
  		wp_enqueue_style( 
  				'cowork-style', 
- 				get_stylesheet_directory_uri() . '/css/build/styles.20180810221308.css', // main.css
+ 				get_stylesheet_directory_uri() . '/css/build/styles.20180828171142.css', // main.css
  				false, // dependencies
  				null // version
  		); 
@@ -300,10 +306,10 @@ require_once('functions/typekit.php');
  /* WooCommerce Support
  ******************************/
  
- add_action( 'after_setup_theme', 'woocommerce_support' );
- function woocommerce_support() {
-     add_theme_support( 'woocommerce' );
- }
+// add_action( 'after_setup_theme', 'woocommerce_support' );
+// function woocommerce_support() {
+//     add_theme_support( 'woocommerce' );
+// }
 
 
 /* admin interface

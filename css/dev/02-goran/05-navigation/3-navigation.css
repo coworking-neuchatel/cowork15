@@ -1,23 +1,4 @@
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-
-5.0 - Navigation
-	5.1 - Links
-	5.2 - Pagination
-	5.3 - Primary Navigation
-	5.4 - Dropdown Toggle
-	5.5 - Footer Navigation
-	5.6 - Social Navigation
-
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-5.0 Navigation
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
 5.3 Primary Navigation
 --------------------------------------------------------------*/
 /* Menu Toggle */
@@ -247,13 +228,6 @@
 		padding-top: 12px;
 		padding-bottom: 10px;
 		border-bottom: 2px solid transparent;
-	}
-	.main-navigation a:hover,
-	.main-navigation a:focus,
-	.main-navigation a:active,
-	.main-navigation .current_page_item > a,
-	.main-navigation .current-menu-item > a {
-		border-bottom-color: #fff;
 	}
 	.main-navigation ul ul {
 		float: left;

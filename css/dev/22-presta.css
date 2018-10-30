@@ -9,6 +9,7 @@
 /*	background: #eee;*/
 	border-radius: 10px;
 	list-style: none;
+	padding-left: 55px;
 }
 
 .ul-presta li:before {
@@ -30,6 +31,7 @@
 		padding-right: 0.6em;
 		display: block;
 		float: left;
+		margin-left: -40px;
 }
 
 .ul-presta li#wifi:before { 
@@ -48,7 +50,7 @@
 	content: "\e60f";
 }
 .ul-presta li#casier:before { 
-	content: "\e604";
+	content: "\e98f";
 }
 .ul-presta li#beamer:before { 
 	content: "\e609";
@@ -56,6 +58,26 @@
 .ul-presta li#acces:before { 
 	content: "\e606";
 }
+.ul-presta li#monde:before { 
+	content: "\e9c9";
+}
+.ul-presta li#phone:before {
+  content: "\e942";
+}
+.ul-presta li#champagne:before {
+  content: "\e9a1";
+}
+.ul-presta li#colis:before {
+  content: "\e99f";
+}
+.ul-presta li#desktop:before {
+  content: "\e956";
+}
+.ul-presta li#fournitures:before {
+  content: "\e905";
+}
+
+
 
 .ul-presta {
 	font-size: 16px;

@@ -38,9 +38,8 @@
 	15.4 - x >= 1230px
 --------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
-1.0 - Reset
---------------------------------------------------------------*/
+/* @group 1.0 - Reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -121,9 +120,22 @@ a img {
 	border: 0;
 }
 
+/* @end */
+
 /*--------------------------------------------------------------
-2.0 - Typography
+2.0 - Colors
 --------------------------------------------------------------*/
+
+body {
+	background: #e1dfdf;
+}
+.site {
+	background: #fff;
+}
+
+/* @group Typography */
+
+
 html {
 	font-size: 100%;
 	line-height: 1.5em;
@@ -275,6 +287,8 @@ big {
 	font-size: 125%;
 }
 
+/* @end */
+
 /* Footer Widget Area */
 .footer-widget-area pre,
 .footer-widget-area code,
@@ -283,6 +297,9 @@ big {
 .footer-widget-area var {
 	background: #e1dfdf;
 }
+
+/* @group Colors
+ */
 
 /* Hero */
 .hero blockquote {
@@ -322,6 +339,8 @@ big {
 .site-top-content acronym {
 	border-bottom-color: #f1f0f0;
 }
+
+/* @end */
 
 /*--------------------------------------------------------------
 3.0 - Elements

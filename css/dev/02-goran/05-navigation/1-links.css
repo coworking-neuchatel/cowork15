@@ -23,7 +23,7 @@
 --------------------------------------------------------------*/
 
 a {
-	color: #e74f4e;
+	color: #e20613;
 	font-weight: bold;
 	text-decoration: none;
 	-moz-transition: all 0.15s ease-in-out;
@@ -45,16 +45,14 @@ a:active {
 a.button,
 a.button-minimal {
 	display: inline-block;
-	padding: 10px 22px;
-	border: 2px solid #e74f4e;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
+	padding: 10px 22px 8px 22px;
 	border-radius: 4px;
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
 a.button {
-	background: #e74f4e;
+	background: #e20613;
 	color: #fff;
 	text-shadow: none;
 }
@@ -66,17 +64,57 @@ a.button:active {
 	color: #fff;
 }
 a.button-minimal {
-	color: #e74f4e;
+	color: #e20613;
 }
 a.button-minimal:hover,
 a.button-minimal:focus,
 a.button-minimal:active {
-	background: #e74f4e;
-	border-color: #e74f4e;
+	background: #e20613;
+	border-color: #e20613;
 	color: #fff;
 }
 
-/* Hero */
+/* READ MORE link
+* Pseudo-Button class
+* Layout defined in : 11.content.css 
+*/
+
+.featured-page .more-link,
+.grid .more-link {
+	background: #e20613;
+	color: #fff;
+}
+
+/* More Link */
+.more-link {
+	display: inline-block;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.more-link:after {
+	content: '';
+	display: inline-block;
+	margin-bottom: 3px;
+	margin-left: 10px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #fff;
+	vertical-align: baseline;
+	-moz-transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+.more-link:hover:after,
+.more-link:focus:after,
+.more-link:active:after {
+	border-left-color: #242424;
+}
+.more-link .meta-nav {
+	display: none;
+}
+
+/* Hero - Headers, Links and Buttons */
+
 .hero .entry-header {
 	margin-bottom: 24px;
 }
@@ -114,6 +152,7 @@ a.button-minimal:active {
 }
 
 /* Site Footer & Site Top Content */
+
 .site-footer a,
 .site-top-content a {
 	color: #fff;

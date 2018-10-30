@@ -29,17 +29,7 @@
 	.widget-area {
 		padding-top: 48px;
 	}
-	.content-area,
-	.featured-page-area,
-	.footer-widget-area,
-	.front-page-widget-area,
-	.grid-area,
-	.site-branding,
-	.site-footer,
-	.widget-area {
-		padding-right: 48px;
-		padding-left: 48px;
-	}
+	
 	.comment-list,
 	.featured-page,
 	.grid,

@@ -1,11 +1,10 @@
 /*--------------------------------------------------------------
 15.4 x >= 1230px
 --------------------------------------------------------------*/
+
 @media screen and (min-width: 1230px) {
 	/* Layout */
-	.site {
-		width: 1230px;
-	}
+	
 	.hero .hentry,
 	.hero-wrapper,
 	.no-sidebar-full .content-area {
@@ -40,17 +39,5 @@
 	.single:not(.no-sidebar) .post-thumbnail {
 		width: 772px;
 	}
-	body.hero-image .hero.with-featured-image,
-	body[class*="front-page"] .hero {
-		padding: 216px 0;
-	}
-	body.hero-image .hero.without-featured-image {
-		padding: 144px 0;
-	}
-	body.hero-image .hero.with-featured-image {
-		padding-top: 312px;
-	}
-	body.hero-image .hero.without-featured-image {
-		padding-top: 240px;
-	}
+	
 }

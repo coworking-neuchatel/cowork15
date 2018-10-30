@@ -1,17 +1,22 @@
 
 @import '02-goran/00-goran.css';
+@import '02-goran/04-forms.css';
 
 @import '02-goran/05-navigation/1-links.css';
 @import '02-goran/05-navigation/2-pagination.css';
 @import '02-goran/05-navigation/3-navigation.css';
 @import '02-goran/05-navigation/6-social.css';
 
-
 @import '02-goran/06-accessibility.css';
 @import '02-goran/07-layout.css';
 
 @import '02-goran/10-widgets.css';
-@import '02-goran/11-content.css';
+
+@import '02-goran/11-content/1-content.css';
+@import '02-goran/11-content/3-hero-area.css';
+@import '02-goran/11-content/4-grid-page.css';
+
+@import '02-goran/12-comments.css';
 @import '02-goran/13-media.css';
 @import '02-goran/14-jetpack.css';
 

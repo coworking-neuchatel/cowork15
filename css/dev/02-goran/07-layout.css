@@ -4,13 +4,10 @@
 7.0 - Alignments
 8.0 - Clearings
 9.0 - Layout
-10.0 - Widgets
 --------------------------------------------------------------*/
 
+/* @group 7.0 - Alignments */
 
-/*--------------------------------------------------------------
-7.0 Alignments
---------------------------------------------------------------*/
 .alignleft {
 	display: inline;
 	float: left;
@@ -30,9 +27,10 @@
 	vertical-align: bottom;
 }
 
-/*--------------------------------------------------------------
-8.0 Clearings
---------------------------------------------------------------*/
+/* @end */
+
+/* @group 8.0 - Clearings */
+
 .clear:before,
 .clear:after,
 .comment-content:before,
@@ -72,36 +70,44 @@
 	clear: both;
 }
 
+/* @end */
+
 /*--------------------------------------------------------------
 9.0 Layout
 --------------------------------------------------------------*/
-body {
-	background: #e1dfdf;
-}
-.site {
-	background: #fff;
-}
 
+
+/* responsive 1 */
 @media screen and (min-width: 600px) {
 	.site {
 		width: 600px;
 	}
 }
 
+/* responsive 2 */
 @media screen and (min-width: 768px) {	
 	.site {
 		width: 768px;
 	}	
 }
 
+/* responsive 3 */
 @media screen and (min-width: 1020px) {	
 	.site {
 		width: 1020px;
 	}
-	
 }
 
+/* responsive 4 */
+@media screen and (min-width: 1230px) {	
+	.site {
+		width: 1230px;
+	}
+}
+
+
 /* Grid */
+
 .hero .hentry,
 .hero-wrapper,
 .no-sidebar .content-area,
@@ -113,13 +119,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {	
-	.no-sidebar .content-area,
+
+.no-sidebar .content-area,
 	.no-sidebar-full .content-area {
 		float: none;
 	}
-}
 
-@media screen and (min-width: 768px) {	
 	.hero .hentry,
 	.hero-wrapper,
 	.no-sidebar-full .content-area {
@@ -133,7 +138,6 @@ body {
 	.no-sidebar-full .content-area {
 		width: 876px;
 	}
-	
 }
 
 
@@ -160,6 +164,36 @@ body {
 	padding-right: 24px;
 	padding-left: 24px;
 }
+
+/* Resp 2 */
+@media screen and (min-width: 768px) {	
+	.content-area,
+	.featured-page-area,
+	.footer-widget-area,
+	.front-page-widget-area,
+	.grid-area,
+	.site-branding,
+	.site-footer,
+	.widget-area {
+		padding-right: 48px;
+		padding-left: 48px;
+	}
+	
+	.home .site-branding {
+		padding-right: 24px;
+		padding-left: 24px;
+	}
+}
+
+/* Resp 3 */
+@media screen and (min-width: 1020px) {	
+	.content-area,
+	.site-branding,
+	.site-info {
+		margin-left: 72px;
+	}
+}
+
 .content-area,
 .featured-page-area,
 .footer-widget-area,
@@ -169,7 +203,10 @@ body {
 	padding-top: 24px;
 }
 
+/* @group Header Area */
+
 /* Header */
+
 .site-top-content {
 	padding: 6px 24px;
 	background: #403f3f;
@@ -178,8 +215,8 @@ body {
 	text-align: right;
 }
 .site-header {
-	background: #b23d3c;
-	color: #fff;
+/*	background: #b23d3c;
+	color: #fff;*/
 }
 .site-logo {
 	display: block;
@@ -227,6 +264,8 @@ body {
 	margin: 0 auto;
 	width: 100%;
 }
+
+/* @end */
 
 /* Content */
 .site-content {
