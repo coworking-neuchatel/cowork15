@@ -68,10 +68,16 @@ a.frm_save_draft,
 .with_frm_style .frm_radio label, .with_frm_style .frm_checkbox label,
 .frm_style_formidable-style.with_frm_style .frm_error_style,
 .frm_style_formidable-style.with_frm_style .frm_form_field.frm_html_container, .frm_style_formidable-style.with_frm_style .frm_form_field .frm_show_it,
-.frm_style_formidable-style.with_frm_style .frm_submit button
+.frm_style_formidable-style.with_frm_style .frm_submit button,
+.frm_rootline_title
 {
  font-family: 'hk-super', "camingodos-web", "Arial Bold", Helvetica, sans-serif !important;
 	font-size: 100%;
+ }
+ 
+ /* Text Color */
+ .frm_style_formidable-style.with_frm_style .frm_form_field.frm_html_container {
+ 	color:  #444;
  }
  
  .frm_style_formidable-style.with_frm_style label.frm_primary_label, 
@@ -83,7 +89,12 @@ a.frm_save_draft,
  .frm_style_formidable-style.with_frm_style div.frm_description, 
  .frm_style_formidable-style.with_frm_style .frm-show-form > div.frm_description, 
  .frm_style_formidable-style.with_frm_style .frm_error {
+ 	font-size: 100%;
+ }
+ 
+ .frm_style_formidable-style.with_frm_style .frm_error {
  	font-size: 80%;
+ 	padding: 0.5em;
  }
  
  .frm_style_formidable-style.with_frm_style input[type=submit],
@@ -266,6 +277,17 @@ table.frmcal-calendar .frmcal-today .frmcal_date {
 	border-radius: 4px;
 	padding: 1em 1em 0.2em 1em;
 	margin-bottom: 1em;
+}
+
+/* Progression */
+
+.frm_style_formidable-style.with_frm_style .frm_rootline .frm_current_page input[type="button"] {
+    border-color: #ad1a19;
+    background-color: #e74f4e;
+}
+
+.frm_style_formidable-style.with_frm_style .frm_current_page .frm_rootline_title {
+    color: #e74f4e;
 }
 
 /* @end */
