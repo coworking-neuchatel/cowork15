@@ -114,10 +114,10 @@ blockquote,
 textarea 
 {
 	color: #242424;
-	font-family: 'hk-super', Helvetica, Arial, sans-serif;
+	font-family: 'Acumin Pro', 'acumin-pro', 'hk-super', Helvetica, Arial, sans-serif;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 /*
@@ -137,7 +137,7 @@ input[type="submit"],
 #events_wrap,
 .frmcal
 {
-	font-family: 'hk-super', Helvetica, Arial, sans-serif;
+	font-family: 'Acumin Pro', 'acumin-pro', 'hk-super', Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -145,7 +145,7 @@ input[type="submit"],
 */
 body div.jp-carousel-titleanddesc-title 
 {
-	font-family: 'hk-super', Helvetica, Arial, sans-serif !important;
+	font-family: 'Acumin Pro', 'acumin-pro', 'hk-super', Helvetica, Arial, sans-serif !important;
 }
 
 
