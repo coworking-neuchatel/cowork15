@@ -286,12 +286,14 @@
 
 /* Footer Widget Area */
 .footer-widget-area {
-	background: #f1f0f0;
+	background-color: #fff;
+	border-top : 2px solid var(--soft-color);
 }
 
 /* Footer */
 .site-footer {
 	background: #403f3f;
+	background-color: var(--dark-color);
 	font-size: 0.875em;
 	line-height: 1.71429em;
 }
