@@ -188,32 +188,6 @@ h1.site-title a {
 /* @end */
 
 
-
-/* @group Hero Area - Red Circle */
-
-.red-circle .hero .page-title {
-	background: rgba(222, 52, 51, 0.59);
-	border-radius: 5em;
-	width: 5em;
-	height: 5em;
-	line-height: 5;
-}
-
-.blog .hero .page-title {
-	width: 4em;
-	height: 4em;
-	line-height: 4;
-}
-
-.page-id-12 .hero .page-title {
-	font-size: 2em;
-	width: 6em;
-	height: 6em;
-	line-height: 6;
-}
-
-/* @end */
-
 /* @group Calendar */
 
 .icalprop,

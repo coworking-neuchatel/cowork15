@@ -23,12 +23,17 @@ get_header();
 				 	</div><!-- .hero -->
 				 	
 				 	<style type='text/css'>
-				 	.hero.with-featured-image { background-image: url('//coworking-neuchatel.ch/wp-content/uploads/2014/03/typewriter-contrast.jpg'); }
-				 	.hero.without-featured-image { background-image: url(); }
+				 	
+				 	.hero.with-featured-image .hero-wrapper { 
+				 		/* background-image: url('//coworking-neuchatel.ch/wp-content/uploads/2014/03/typewriter-contrast.jpg'); */
+				 	}
+				 	.hero.without-featured-image .hero-wrapper { 
+				 		/* background-image: url();  */
+				 	}
+				 	
 				 	</style>
 					<?php
 			}
-
 
 ?>
 

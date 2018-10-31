@@ -29,23 +29,6 @@ and (min-width : 820px) {
 		
 	}
 	
-	.red-circle .hero .page-title {
-		border-radius: 7em;
-		width: 7em;
-		height: 7em;
-		line-height: 7;
-	}
-	
-	.blog .hero .page-title {
-		border-radius: 5em;
-		width: 5em;
-		height: 5em;
-		line-height: 5;
-	}
-	
-	.page-id-12 .hero .page-title {
-		font-size: 2.25em;
-	}
 	
 }
 
@@ -72,23 +55,6 @@ and (min-width : 1000px) {
 		clear: left;
 	}
 	
-	.red-circle .hero .page-title {
-		border-radius: 8em;
-		width: 8em;
-		height: 8em;
-		line-height: 8;
-	}
-	
-	.blog .hero .page-title {
-		border-radius: 5em;
-		width: 5em;
-		height: 5em;
-		line-height: 5;
-	}
-	
-
-	
-
 	
 }
 
