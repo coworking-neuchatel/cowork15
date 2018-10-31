@@ -58,12 +58,17 @@
 	.front-item {
 		padding: 0em 2em;
 	}
-}
-
-.front-item .title-style {
-	text-align: center;
-	color: #e74f4e;
-	font-weight: 300;
+	.home .header-member-menu {
+		padding: 0.5em 2em;
+	}
+	/* Page Header */
+	.home .site-branding {
+		padding: 0;
+		margin-left: 2em;
+	}
+	.home .main-navigation {
+		margin-right: 2em;
+	}
 }
 
 .iframe-container .h2,

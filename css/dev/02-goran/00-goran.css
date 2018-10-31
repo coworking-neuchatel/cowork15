@@ -38,6 +38,15 @@
 	15.4 - x >= 1230px
 --------------------------------------------------------------*/
 
+/* @group 0.0 - Variables */
+
+
+:root {
+   --hot-color: #e20613;
+	--soft-color: #e2e2e2;
+	--dark-color: #403f3f;
+}
+
 /* @group 1.0 - Reset */
 
 html, body, div, span, applet, object, iframe,
@@ -122,6 +131,8 @@ a img {
 
 /* @end */
 
+/* @group Colors */
+
 /*--------------------------------------------------------------
 2.0 - Colors
 --------------------------------------------------------------*/
@@ -132,6 +143,12 @@ body {
 .site {
 	background: #fff;
 }
+
+.site-header {
+	background: #fff;
+}
+
+/* @end */
 
 /* @group Typography */
 

@@ -1,0 +1,126 @@
+/* @group Hero Area */
+
+.hero {
+	padding: 24px;
+	background-color: #fff;
+}
+
+/* Resp 2 */
+@media screen and (min-width: 768px) {	
+	.hero {
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+}
+/* Resp 3 */
+@media screen and (min-width: 768px) {	
+	.hero {
+/*		padding-top: 72px;
+		padding-bottom: 72px;*/
+	}
+}
+
+.hero-image .hero {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+/*	text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);*/
+}
+.hero .page-title,
+.hero .hentry {
+	position: relative;
+	color: #000;
+	font-weight: 200;
+}
+.hero .page-title,
+.hero .taxonomy-description {
+	text-align: center;
+}
+.hero .page-title,
+.hero .taxonomy-description * {
+	margin-bottom: 0;
+}
+.hero .page-title {
+	padding-bottom: 1px;
+}
+.hero .hentry {
+	margin-bottom: -24px;
+}
+.hero .entry-footer a {
+	color: rgba(255, 255, 255, 0.7);
+}
+.hero .entry-footer a:hover,
+.hero .entry-footer a:focus,
+.hero .entry-footer a:active {
+	color: #fff;
+}
+body[class*="front-page"] .hero .page-title {
+	text-align: inherit;
+}
+
+/* Resp 1 */
+@media screen and (min-width: 600px) {
+
+	body.hero-image .hero,
+	body[class*="front-page"] .hero {
+		padding: 48px 24px;
+	}
+	
+}
+
+/* Resp 2 */
+@media screen and (min-width: 768px) {	
+
+	body.hero-image .hero,
+	body[class*="front-page"] .hero {
+		padding: 96px 0;
+	}
+	
+}
+
+/* Resp 3 */
+
+@media screen and (min-width: 1020px) {	
+	
+	body.hero-image .hero.with-featured-image,
+	body[class*="front-page"] .hero {
+		padding: 144px 0;
+	}
+	body.hero-image .hero.without-featured-image {
+		padding: 96px 0;
+	}
+	body.hero-image .hero.with-featured-image {
+		padding-top: 240px;
+	}
+	body.hero-image .hero.without-featured-image {
+		padding-top: 192px;
+	}
+	
+}
+
+/* Resp 4 */
+
+@media screen and (min-width: 1230px) {
+	
+	body.hero-image .hero.with-featured-image,
+	body[class*="front-page"] .hero {
+		padding: 216px 0;
+	}
+	body.hero-image .hero.without-featured-image {
+		padding: 144px 0;
+	}
+	body.hero-image .hero.with-featured-image {
+		padding-top: 312px;
+	}
+	body.hero-image .hero.without-featured-image {
+		padding-top: 240px;
+	}
+	
+}
+
+/* @end */
+
+
