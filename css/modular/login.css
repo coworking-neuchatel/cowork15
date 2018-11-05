@@ -1,0 +1,42 @@
+html,
+body,
+body.login {
+/*	background-color: #ddd;*/
+	}
+
+#login,
+#login h1 a {
+	width: 339px;
+}
+
+#login h1 a{
+	padding:  0px 0px 0px 0px;
+	height: 60px;
+}
+
+body.login h1 a {
+	background-image: url('../../img/icons2018/logo-436px.png');
+	background-size: contain;
+	background-position: 0px 0px;
+}
+
+.login #nav a {
+/*    color: #eee !important;*/
+}
+
+.login #nav a:hover {
+/*    color: #ffdd03 !important;*/
+}
+
+#nav {
+/*    text-shadow: 0 1px 0 #333;*/
+}
+
+
+.login #nav, .login #backtoblog {
+/*    text-shadow: 0 1px 0 #000000;*/
+}
+
+.login #nav a, .login #backtoblog a {
+/*    color: #fff !important;*/
+}

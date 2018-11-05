@@ -300,6 +300,8 @@ require_once('functions/init.php');
 
 require_once('functions/typekit.php');
 
+require_once('functions/login.php');
+
 
 
  
