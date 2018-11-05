@@ -4,15 +4,39 @@
 /* On reste dans le mode purement mobile jusqu'à 680px */
 
 
+/* Bloc Background */
+
+.bloc-a {
+}
+
+.bloc-a-header {
+	background-size: cover;
+	padding: 1.2em 0 1.2em 2em;
+}
+
+.bloc-a:nth-child(odd) .bloc-a-header {
+	padding-left: 0;
+	padding-right: 2em;
+}
 
 /* Title Styles : Bloc Title */
 
-.bloc-a .title-style {
-	font-size: 1.5em;
+.front-item .title-style {
+	text-align: center;
+	color: #e74f4e;
+	color: var(--hot-color);
 	font-weight: 300;
-	background-size: cover;
+	font-size: 1.3em;
+}
+
+.bloc-a .title-style {
+	
 	line-height: 120px;
 	margin: 0;
+	line-height: 1.5;
+	padding: 0.3em;
+	background-color: rgba(210, 32, 32, 0.78);;
+	color: #fff;
 }
 
 .bloc-a .title-style:hover {
@@ -23,14 +47,12 @@
 	
 	.bloc-a .title-style {
 		cursor: pointer;
-		font-size: 2em;
 	}
 	
 	.state-open .title-style,
 	.bloc-a .title-style:hover {
 		background-color: #e74f4e;
 		color: #fff;
-		background-image: none !important;
 	}
 
 	.bloc-a .modify-link {
@@ -41,8 +63,20 @@
 
 @media only screen and (min-width: 680px) {
 	
+	.front-item .title-style {
+		font-size: 1.8em;
+	}
+	
+	.bloc-a-header {
+		background-image: none !important;
+		padding: 0;
+	}
+	
 	.bloc-a .title-style {
 		background-image: none !important;
+		background-color: #fff;
+		color: #e74f4e;
+		color: var(--hot-color);
 		line-height: 1.2;
 		margin: 0;
 		padding: 1em 0 0.7em 0;
@@ -54,6 +88,10 @@
 
 /* Title Styles : Lego Title */
 /* used as submenu on small screens */
+
+.lego {
+	background-color: #fff;
+}
 
 .lego-title {
 	font-size: 1em;
@@ -84,8 +122,8 @@
 	}
 	
 	.state-open > .lego-title::before {
-		content: "v ";
-		transform: rotate(90deg);
+		content: "↓ ";
+		/*transform: rotate(90deg);*/
 	}
 	
 }
@@ -159,6 +197,7 @@ On masque le contenu pour ne garder que le titre visible
 
 .lego.lego-visitez-nous .lego-content {
 	display: flex;
+	height: 100%;
 }
 
 .lego-visitez-nous .lego-content {
@@ -243,6 +282,16 @@ On masque le contenu pour ne garder que le titre visible
 	opacity: 1 !important;
 }
 
+.lego-photos .gallery-caption {
+	display: none;
+}
+
+/* If only one photo */
+
+.lego-photos img.single-gallery-img {
+	height: auto !important;
+}
+
 /* @end */
 
 
@@ -276,11 +325,13 @@ On masque le contenu pour ne garder que le titre visible
 				"gallery map" 
 		    "space   map";
 		background-color: #403f3f;
+		background-color: var(--dark-color);
 		border-left: 0;
 	}
 	
 	.bloc-a-notre-espace .lego-title,
-	.bloc-salle-reunion .lego-title {
+	.bloc-salle-reunion .lego-title,
+	.bloc-trio .lego-title  {
 		display: none;
 	}
 	
@@ -293,6 +344,7 @@ On masque le contenu pour ne garder que le titre visible
 	.bloc-a-notre-espace .gallery-item:nth-child(1),
 	.bloc-a-notre-espace .gallery-item:nth-child(3) {
 		background-color: #e74f4e;
+		background-color: var(--hot-color);
 	}
 	
 	.bloc-a-notre-espace .gallery-item:nth-child(1) img,
@@ -384,7 +436,7 @@ On masque le contenu pour ne garder que le titre visible
 	.bloc-a-notre-espace .lego-photos,
 	.bloc-a-notre-espace .lego-photos .lego-content,
 	.lego-photos .gallery-size-thumbnail {
-		height: auto;
+		height: 100%;
 		min-height: 400px;
 	}
 	
@@ -436,7 +488,10 @@ On masque le contenu pour ne garder que le titre visible
 		    "details   photo" 
 				"action    photo";
 		background-color: #fff;
-		border-left: 2em solid #FF6F6F;
+		border: 1px solid #d6d6d6;
+	}
+		
+		
 	}
 	
 	.bloc-basic .lego-action {
@@ -449,15 +504,19 @@ On masque le contenu pour ne garder que le titre visible
 	
 	.bloc-basic .lego-details {
 		grid-area: details;
-		background-color: #F8F3E9;
+		/*background-color: #F8F3E9;*/
 	}
 	
 	.bloc-basic .lego-details .lego-content {
 		padding: 2em;
 	}
 	
+	/* Lego-photos
+	*/
+	
 	.bloc-basic .lego-photos {
 		grid-area: photo;
+		position: relative;
 	}
 	
 	.bloc-basic .lego-photos .lego-content {
@@ -471,6 +530,21 @@ On masque le contenu pour ne garder que le titre visible
 	.bloc-basic .lego-photos .gallery-item:nth-child(1) {
 		display: block;
 	}
+	
+	.bloc-basic .lego-photos .gallery-item:nth-child(2) {
+		display: block;
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		height: 160px;
+		width: 160px;
+	}
+	
+	.bloc-basic .lego-photos .gallery-item:nth-child(2) img {
+		opacity: 0.4;
+	}
+	
+	
 	
 	/* Styles Salle Réunion */
 	

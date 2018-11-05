@@ -88,3 +88,39 @@ if ( ! function_exists ( 'get_field' ) ) {
         
     }
 }
+
+/*
+ * Produce cover image
+*/
+
+function cowork_cover_img($field) {
+
+	$img = array();
+	
+	$cover_img = get_field($field);
+		
+	if ($cover_img) {
+	
+		$img = array();
+	
+		$img["m"] = wp_get_attachment_image_src( 
+			$cover_img, 
+			'medium' );
+
+		$img["l"] = wp_get_attachment_image_src( 
+			$cover_img, 
+			'large' );
+			
+		$img["gradient"] = 'linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2)), ';
+	
+		$img["m_style"] = ' style="background-image:'.$img["gradient"].'url('.$img["m"][0].')" ';
+		
+		$img["l_style"] = ' style="background-image:url('.$img["l"][0].')" ';
+
+	}
+	
+	return $img;
+	
+}
+
+

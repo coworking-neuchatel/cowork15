@@ -30,11 +30,16 @@ get_header(); ?>
 	
 	get_template_part( 'template-parts/front/blocs-a/notre-espace' );
 	
-	get_template_part( 'template-parts/front/blocs-a/salle-reunion' );
+	// get_cowork_bloc('notre-espace','Visitez-nous');
 	
-	get_template_part( 'template-parts/front/blocs-a/travailler-1-jour' );
+	/* Salle de réunion */
 	
-	get_template_part( 'template-parts/front/blocs-a/nos-formules' );
+	get_cowork_bloc_trio('Salle de réunion');
+	
+	// READ: https://wordpress.stackexchange.com/questions/176804/passing-a-variable-to-get-template-part
+		
+	
+	get_cowork_bloc_trio('Travailler 1 jour');
 		
 			
 	// Bloc: Prestations

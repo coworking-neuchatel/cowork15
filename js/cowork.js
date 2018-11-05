@@ -51,7 +51,7 @@
 	 * activate when < 680 PX
 	*/
 	   
-	$( ".bloc-a"  ).on("click", ".title-style", function(){
+	$( ".bloc-a"  ).on("click", ".bloc-a-header", function(){
 	 		 	
 		var target = $( this ).next(".bloc-a-content");
 		var parent = $( this ).parent();
@@ -86,6 +86,18 @@
 			parent.toggleClass( "state-open" );
 		}
 	});
+	
+	
+	/* Bloc Trio: compter images 
+	
+	 - On compte les images des bloc-trio pour afficher le nombre.
+	 - On utilise JS pour les compter, car le HTML est produit par le shortcode "gallery".
+	 - On compte le nombre d'éléments gallery-item dans l'élément ".bloc-trio .gallery"
+	 - On ajoute ce nombre...
+	 *
+	*/
+	
+	// 
 		 
 		 
 	/* 

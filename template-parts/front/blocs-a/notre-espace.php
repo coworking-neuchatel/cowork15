@@ -7,7 +7,7 @@
 
 $custom_query = new WP_Query( array(
 	'post_type' => 'cwn_bloc',
-	'title' => 'Notre espace',
+	'title' => 'Visitez-nous',
 	'post_status' => array( 'publish' )
 ) ); 
 
@@ -34,34 +34,19 @@ if ($custom_query->have_posts()) :
 	
 			*/
 	
-	$cover_img = get_field('notre_espace_cover');
+	$img = cowork_cover_img('notre_espace_cover');
 	
-	if ($cover_img) {
+	echo '<section class="front-item bloc-a bloc-a-notre-espace">';
 	
-		$cover_img_m = wp_get_attachment_image_src( 
-			$cover_img, 
-			'medium' );
-
-		$cover_img_l = wp_get_attachment_image_src( 
-			$cover_img, 
-			'large' );
-			
-		$cover_gradient = 'linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2)), ';
-	
-		$cover_img_m_style = ' style="background-image:'.$cover_gradient.'url('.$cover_img_m[0].')" ';
-		
-		$cover_img_l_style = ' style="background-image:url('.$cover_img_l[0].')" ';
-
-	}
-	
-	echo '<section class="front-item bloc-a bloc-a-notre-espace" >';
+	echo '<header class="bloc-a-header" '.$img["m_style"].'>';
 	
 		?>
-		<h2 id="notre-espace" class="h2 title-style" <?php echo $cover_img_m_style; ?>><?php the_title(); ?></a></h2>
+		<h2 id="notre-espace" class="h2 title-style"><?php the_title(); ?></a></h2>
+		</header>
 		<div class="bloc-a-content bloc-quad">
 
 		<div class="lego lego-visitez-nous lego-visible">
-			<div class="lego-content" <?php echo $cover_img_l_style; ?>>
+			<div class="lego-content" <?php echo $img["l_style"]; ?>>
 				<?php 
 				
 					echo '<a class="button" href="' .get_field('notre_espace_formulaire'). '">Visitez-nous</a></button>';

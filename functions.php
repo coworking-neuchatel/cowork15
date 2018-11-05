@@ -298,6 +298,8 @@ require get_stylesheet_directory() . '/inc/jetpack.php';
 
 require_once('functions/init.php');
 
+require_once('functions/blocs.php');
+
 require_once('functions/typekit.php');
 
 require_once('functions/login.php');
