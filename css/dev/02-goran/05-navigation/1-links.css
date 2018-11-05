@@ -24,15 +24,12 @@
 
 a {
 	color: #e20613;
-	font-weight: bold;
 	text-decoration: none;
 	-moz-transition: all 0.15s ease-in-out;
 	-webkit-transition: all 0.15s ease-in-out;
 	transition: all 0.15s ease-in-out;
 }
-a:visited {
-	font-weight: normal;
-}
+
 a:hover,
 a:focus,
 a:active {

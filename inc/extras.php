@@ -29,7 +29,7 @@ function cowork_body_classes( $classes ) {
 	
 	if ( is_home() || is_page( 12 ) ) {
 		// 12 = Coworking
-		$classes[] = 'red-circle';
+		// $classes[] = 'red-circle';
 	}
 	
 	// Adds a class of no-sidebar-full, no-sidebar or sidebar-(right|left) to blogs.

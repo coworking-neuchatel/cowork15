@@ -6,7 +6,7 @@
  *
  */
 
-// Change-Detector-XXXXXXXXXXXXXXXXXXXXXXXXXXX - for Espresso.app
+// Change-Detector-XXXXXXXXXXXXXXXXXXXXXXXXXXXX - for Espresso.app
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -63,11 +63,6 @@ function cowork_setup() {
 	 * Unregister nav menu.
 	 */
 	unregister_nav_menu( 'secondary' );
-
-	/*
-	 * Editor styles.
-	 */
-	add_editor_style( array( 'editor-style.css', cowork_noto_sans_font_url(), cowork_noto_serif_font_url(), cowork_droid_sans_mono_font_url() ) );
 
 }
 add_action( 'after_setup_theme', 'cowork_setup', 11 );
@@ -247,7 +242,7 @@ if ( $host != 'coworking-neuchatel.ch' ) {
  		// PROD: the MAIN stylesheet - combined and minified
  		wp_enqueue_style( 
  				'cowork-style', 
- 				get_stylesheet_directory_uri() . '/css/build/styles.20180828171142.css', // main.css
+ 				get_stylesheet_directory_uri() . '/css/build/styles.20181030134324.css', // main.css
  				false, // dependencies
  				null // version
  		); 
