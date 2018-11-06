@@ -171,6 +171,10 @@ On masque le contenu pour ne garder que le titre visible
 	.jsactive .lego .lego-content {
 		display: block;
 	}
+	
+	.jsactive .lego-visite-360 .lego-content {
+		display: flex;
+	}
 
 }
 
@@ -196,20 +200,42 @@ On masque le contenu pour ne garder que le titre visible
 /* Visitez-nous */
 
 .lego.lego-visitez-nous .lego-content {
-	display: flex;
-	height: 100%;
+	display: flex; /* override - keep visible in mobile mode */
 }
 
-.lego-visitez-nous .lego-content {
-	height: 150px;
+.lego-visite-360.state-open .lego-content {
+	display: flex !important;
+}
+
+.lego-visitez-nous .lego-content,
+.lego-visite-360 .lego-content {
+	height: 100%;
+	min-height: 150px;
 	background-size: cover;
 	
 	flex-direction: column;
 	justify-content: center;
 }
 
-.lego-visitez-nous .lego-content a {
+.lego-visitez-nous .lego-content a,
+.lego-visite-360 .lego-content a {
 	margin: auto;
+	z-index: 2;
+}
+
+.lego-visite-360 .shade {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+	transition: background-color 0.5s ease-in-out;
+}
+
+.lego-visite-360:hover .shade  {
+	background-color: rgba(0, 0, 0, 0.00);
 }
 
 .lego-visite-360 .lego-content {
@@ -217,6 +243,21 @@ On masque le contenu pour ne garder que le titre visible
 	position: relative;
 }
 
+.lego-visite-360-link {
+	display: block;
+	height: 100%;
+	background: #333;
+}
+
+.lego-visite-360-link:hover img {
+	opacity: 0.8;
+}
+
+.lego-visite-360 img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
 
 .lego-carte-google .lego-content {
 	height: 150px;

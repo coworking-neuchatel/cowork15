@@ -28,6 +28,7 @@ if ($custom_query->have_posts()) :
 			- 
 			- notre_espace_cover (image)
 			- notre_espace_images (gallerie)
+			- visite_3d_cover
 			- visite_3d
 			- carte_google (Zone de texte)
 			- notre_espace_formulaire
@@ -75,15 +76,28 @@ if ($custom_query->have_posts()) :
 				?>
 			</div>
 		</div>
+		<?php 
 		
+		/*
+		 Visite 360°
+		*/
+		
+		?>
 		<div class="lego lego-visite-360">
 			<h3 class="lego-title">visite 360°</h3>
-			<div class="lego-content">
+			<?php 
+			
+			$img_3d = cowork_cover_img('visite_3d_cover');
+			
+			 ?>
+			<div class="lego-content" <?php echo $img_3d["l_style"]; ?>>
 				<?php 
 				
 				$visite_3d = get_field('visite_3d');
 				
-				echo $visite_3d;
+				echo '<a class="button" href="' .get_field('visite_3d'). '" target="_blank">Visite 360°</a></button>';
+				
+				echo '<div class="shade"></div>';
 				
 				 ?>
 			</div>
