@@ -19,6 +19,17 @@
 	padding-right: 2em;
 }
 
+.bloc-a.state-open .bloc-a-header {
+/*	padding-left: 0;
+	padding-right: 0;
+	padding: 0;*/
+}
+
+.bloc-a.state-open .title-style {
+/*	padding-top: 1.2em;
+	padding-bottom: 1.2em;*/
+}
+
 /* Title Styles : Bloc Title */
 
 .front-item .title-style {
@@ -35,7 +46,7 @@
 	margin: 0;
 	line-height: 1.5;
 	padding: 0.3em;
-	background-color: rgba(210, 32, 32, 0.78);;
+	background-color: rgba(226, 6, 19, 0.65);
 	color: #fff;
 }
 
@@ -52,6 +63,7 @@
 	.state-open .title-style,
 	.bloc-a .title-style:hover {
 		background-color: #e74f4e;
+		background-color: var(--hot-color);
 		color: #fff;
 	}
 
@@ -142,7 +154,7 @@
 /* Bloc Content Style*/
 
 .bloc-a-content {
-	border-left: 0.7em solid #6FE8FF;
+	border-left: 0.7em solid #fff;
 }
 
 /* 

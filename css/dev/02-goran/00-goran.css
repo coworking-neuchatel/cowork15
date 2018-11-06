@@ -42,9 +42,9 @@
 
 
 :root {
-   --hot-color: #e20613;
-	--soft-color: #e2e2e2;
-	--dark-color: #403f3f;
+   --hot-color: #e20613; /* Deep Red */
+	--soft-color: #e2e2e2; /* Pale Gray */
+	--dark-color: #403f3f; /* Dark Gray */
 }
 
 /* @group 1.0 - Reset */

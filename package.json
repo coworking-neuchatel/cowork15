@@ -3,7 +3,7 @@
   "description": "a WordPress theme",
   "repository": {
     "type": "git",
-    "url": "https://ms-studio@bitbucket.org/ms-studio/cowork.git"
+    "url": "https://github.com/coworking-neuchatel/cowork15"
   },
   "version": "1.0.0",
   "devDependencies": {

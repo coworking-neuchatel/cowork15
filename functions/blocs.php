@@ -1,9 +1,20 @@
 <?php
 
 
-
 /*
  * Get Blocs
+*/
+
+/**
+* Get Cowork Bloc
+*
+* INPUT:
+* @param string $template : name of the bloc-template to use.
+* @param string $title : title of the Bloc.
+*
+* OUTPUT:
+* Produces the HTML markup of the bloc.
+* 
 */
 
 function get_cowork_bloc( $template, $title ) {
@@ -14,14 +25,24 @@ $custom_query = new WP_Query( array(
 	'post_status' => array( 'publish' )
 ) ); 
 
-get_template_part( 'template-parts/front/blocs-a/'.$template );
+get_template_part( 'template-parts/blocs/'.$template );
 
-//bloc_cover
-//bloc_gallery
-//bloc_formulaire
-
+// bloc_cover
+// bloc_gallery
+// bloc_formulaire
 
 }
+
+/**
+* Get Cowork Bloc Trio
+*
+* INPUT:
+* @param string $title : title of the Bloc content.
+*
+* OUTPUT:
+* Produces the HTML markup of the bloc.
+* 
+*/
 
 function get_cowork_bloc_trio( $title ) {
 
@@ -135,13 +156,5 @@ if ($custom_query->have_posts()) :
 	
 	endif;
 
-
-//bloc_cover
-//bloc_gallery
-//bloc_formulaire
-
-
 }
 
-
-?>

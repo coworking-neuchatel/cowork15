@@ -42,7 +42,7 @@ a:active {
 a.button,
 a.button-minimal {
 	display: inline-block;
-	padding: 10px 22px 8px 22px;
+	padding: 12px 22px 6px 22px;
 	border-radius: 4px;
 	font-weight: bold;
 	text-transform: uppercase;

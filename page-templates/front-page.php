@@ -28,16 +28,13 @@ get_header(); ?>
 	
 	*/
 	
-	get_template_part( 'template-parts/front/blocs-a/notre-espace' );
+	get_template_part( 'template-parts/blocs/notre-espace' );
 	
 	// get_cowork_bloc('notre-espace','Visitez-nous');
 	
 	/* Salle de réunion */
 	
 	get_cowork_bloc_trio('Salle de réunion');
-	
-	// READ: https://wordpress.stackexchange.com/questions/176804/passing-a-variable-to-get-template-part
-		
 	
 	get_cowork_bloc_trio('Travailler 1 jour');
 		
