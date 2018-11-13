@@ -43,10 +43,8 @@
 	margin: 0;
 }
 
-@media screen and (min-width: 768px) {	
-	.hentry {
-		margin-bottom: 24px;
-	}
+.hentry {
+	margin-bottom: 24px;
 }
 
 
@@ -164,6 +162,9 @@
 .entry-meta {
 	margin-bottom: 24px;
 	border-bottom: 1px solid #f1f0f0;
+}
+.entry-footer {
+	padding-bottom: 0;
 }
 .entry-footer span {
 	padding-right: 12px;
