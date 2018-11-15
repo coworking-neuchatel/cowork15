@@ -19,7 +19,7 @@ Champs du questionnaire:
 - Date d'anniversaire : fiche_anniv
 - ~ Profession ~ fiche_profession (taxonomie?)
 - ~ Entreprise (si non indépendant) ~ fiche_entreprise
-- ~ Lien du site web (de l'entreprise ou d'un éventuelle page personnelle) ~
+- ~ Lien du site web (de l'entreprise ou d'un éventuelle page personnelle) ~ fiche_url
 - ~ Logo de l'entreprise ~ fiche_logo
 - ~ Domaine de compétence particulier ~ fiche_domaine = taxonomie
 - ~ Loisir quelconque ~ fiche_loisir
@@ -32,8 +32,8 @@ Informations complémentaires pour créer ta "story":
 
 - Depuis combien de temps exerces-tu ton activité ? fiche_combien
 - Pourquoi exercer ce métier ? fiche_pourquoi
-- Que retires-tu de ton expérience professionnelle jusqu'à aujourd'hui ?
-- As-tu une citation ou une phrase qui te résume ou qui résume ton expérience ?
+- Que retires-tu de ton expérience professionnelle jusqu'à aujourd'hui ? fiche_experience
+- As-tu une citation ou une phrase qui te résume ou qui résume ton expérience ? fiche_citation
 
 Les résultats sont dans le dossier Google Drive:
 
@@ -41,9 +41,7 @@ Les résultats sont dans le dossier Google Drive:
 
 ## Comment c'est géré dans le site?
 
-Type de contenu:
-
-cwn_fiches
+Type de contenu: cwn_fiches
 
 Ce contenu est déclaré dans l'extension CWN-Functions.
 
@@ -53,6 +51,17 @@ fiche_photo
 fiche_anniversaire
 etc.
 
+## Comment fonctionnent les URL?
+
+Dans la déclaration du post-type "fiche", on définit le slug: "membre".
+cela détermine l'URL de la page Archive de ce Post-Type.
+Pour afficher la page des membres, on utilisera ce template: archive-cwn_fiche.php
+
+Lies des compétences: le slug est "competence". Cela produit des URL de ce type:
+p.ex. compétence: webdesign
+http://cowork:8888/competence/webdesign/
+Quel template sera utilisé?
+taxonomy-$taxonomy.php : donc, taxonomy-cwn_competence.php
 
 
 ***

@@ -36,6 +36,10 @@ function cowork_body_classes( $classes ) {
 	if ( is_page_template( 'page-templates/page-biblio.php' ) ) {
 		$classes[] = 'no-sidebar-full';
 	}
+	
+	if ( is_archive( 'cwn_competence' ) || is_archive( 'cwn_fiche' ) ) {
+		$classes[] = 'no-sidebar-full';
+	}
 
 	return $classes;
 }
