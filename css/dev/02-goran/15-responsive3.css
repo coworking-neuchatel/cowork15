@@ -96,6 +96,7 @@
 		padding-right: 0;
 		padding-left: 0;
 	}
+	
 	body[class*="alternate-sidebar"].sidebar-left .content-area,
 	.sidebar-right .content-area,
 	body[class*="alternate-sidebar"].sidebar-right .widget-area,
@@ -104,6 +105,7 @@
 		margin-right: 0;
 		margin-left: 72px;
 	}
+	
 	body[class*="alternate-sidebar"].sidebar-left .widget-area,
 	.sidebar-right .widget-area,
 	body[class*="alternate-sidebar"].sidebar-right .content-area,
@@ -112,6 +114,15 @@
 		margin-right: 72px;
 		margin-left: 0;
 	}
+	
+	/* Fix margin when NO SIDEBAR */ 
+	
+	.sidebar-right .content-area {
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
 	.hero-image .site-header {
 		position: relative;
 		z-index: 2;
