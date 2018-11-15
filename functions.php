@@ -299,7 +299,7 @@ require_once('functions/typekit.php');
 
 require_once('functions/login.php');
 
-
+require_once('functions/pre-get.php');
 
  
  /* WooCommerce Support
