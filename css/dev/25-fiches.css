@@ -35,6 +35,10 @@
 	margin: 0.5em 0 0.5em 0;
 }
 
+.fiche .email a {
+	color: #242424;
+}
+
 /* Photos */
 
 .fiche-photo {

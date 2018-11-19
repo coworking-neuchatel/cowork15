@@ -102,18 +102,34 @@ if ( $show_fiche == true )  {
 			}
 			
 			if ( get_field('fiche_entreprise') )
-			{
-				echo '<div>' . get_field('fiche_entreprise') . '</div>';
-			}
+			{ 
 			
-			if ( get_field('fiche_url') )
-			{
-			
-				// construire forme courte, sans http...
+				// Combiner avec URL?
 				
-				echo '<div><a href="' . get_field('fiche_url') . '">' . get_field('fiche_url') . '</a></div>';
+				if ( get_field('fiche_url') )
+				{
+					echo '<div><a href="' . get_field('fiche_url') . '">' . get_field('fiche_entreprise') . '</a></div>';
+				} else {
+				
+				echo '<div>' . get_field('fiche_entreprise') . '</div>';
+				
+				}
+				
+			} else {
+				// Pas d'entreprise, indépendant
+				// Afficher URL si existant:
+				
+				if ( get_field('fiche_url') ) {
+					
+					$url = get_field('fiche_url');
+					// construire forme courte, sans http...
+					if (function_exists('ms_studio_pretty_url')) {
+						$url = ms_studio_pretty_url( $url );
+					}
+					echo '<div><a href="' . get_field('fiche_url') . '">' . $url . '</a></div>';
+				}
 			}
-			
+
 			if ( is_user_logged_in() ) {
 			
 				if ( get_field('fiche_anniv') )
@@ -141,7 +157,14 @@ if ( $show_fiche == true )  {
 			
 			if ( get_field('fiche_email') )
 			{
-				echo '<div>' . get_field('fiche_email') . '</div>';
+				
+				$email = get_field('fiche_email');
+				
+				if (function_exists('ms_studio_protect_email')) {
+				   $email = ms_studio_protect_email( $email );
+				 }
+				 
+				echo '<div>' . $email . '</div>';
 			}
 						
 			if ( is_user_logged_in() ) {
