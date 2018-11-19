@@ -31,11 +31,16 @@ get_header();
 						
 						<?php
 						
+							// Note: La Query est modifiée dans:
+							// pre-get.php
+							// $query->set( 'orderby', 'rand');
+						
 							// Page Membres:
+														
+							get_template_part( 'content', 'cwn_fiche' );
+							
 							// 1) On affiche 4 membres pris aléatoirement
 							// la requête est modifiée avec pre_get
-							
-							get_template_part( 'content', 'cwn_fiche' );
 							
 							// ajouter à la liste des IDs à exclure
 							

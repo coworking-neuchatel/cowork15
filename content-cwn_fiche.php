@@ -20,24 +20,57 @@ if ($fiche_photo) {
 	$post_classes[] = "has-photo";
 }
 
+
+// Vérifier si option public est: OUI, sinon ne rien afficher du tout. = fiche_acceptation
+
+// J'accepte que les réponses données aux questions entourées de "~" soient publiées sur le site web du Coworking Neuchâtel en accès public *
+
+$show_fiche = false;
+
+if ( get_field('fiche_acceptation') )
+{
+	if ( get_field('fiche_acceptation') == 'oui' )  {
+		
+		$show_fiche = true;
+	
+	} else {
+	
+		// Utilisateurs connectés uniquement!
+		if ( is_user_logged_in() ) {
+		  $show_fiche = true;
+		}
+	
+	}
+}
+
+// Afficher le contenu de la fiche? 
+
+if ( $show_fiche == true )  {
+
  ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_classes); ?>>
 		<?php 
 		
+		
 		if (in_array( "has-photo", $post_classes)) {
 			
 			echo '<div class="fiche-photo">';
 			
-			if ($fiche_photo) {
+			// Photo perso = non-public
 			
-				echo '<div class="fiche-portrait">';
-
-				echo wp_get_attachment_image( 
-					$fiche_photo, 
-					'medium' );
-				echo '</div>';
+			if ( is_user_logged_in() ) {
+			
+				if ($fiche_photo) {
+				
+					echo '<div class="fiche-portrait">';
 	
+					echo wp_get_attachment_image( 
+						$fiche_photo, 
+						'medium' );
+					echo '</div>';
+		
+				}
 			}
 			
 			if ($fiche_logo) {
@@ -73,10 +106,20 @@ if ($fiche_photo) {
 				echo '<div>' . get_field('fiche_entreprise') . '</div>';
 			}
 			
-			
-			if ( get_field('fiche_anniv') )
+			if ( get_field('fiche_url') )
 			{
-				echo '<div>Anniversaire: ' . get_field('fiche_anniv') . '</div>';
+			
+				// construire forme courte, sans http...
+				
+				echo '<div><a href="' . get_field('fiche_url') . '">' . get_field('fiche_url') . '</a></div>';
+			}
+			
+			if ( is_user_logged_in() ) {
+			
+				if ( get_field('fiche_anniv') )
+				{
+					echo '<div>Anniversaire: ' . get_field('fiche_anniv') . '</div>';
+				}
 			}
 			
 			$terms_competences = get_the_term_list( 
@@ -95,19 +138,19 @@ if ($fiche_photo) {
 			
 			}
 			
-			if ( get_field('fiche_url') )
-			{
-				echo '<div><a href="' . get_field('fiche_url') . '">' . get_field('fiche_url') . '</a></div>';
-			}
 			
 			if ( get_field('fiche_email') )
 			{
 				echo '<div>' . get_field('fiche_email') . '</div>';
 			}
+						
+			if ( is_user_logged_in() ) {
 			
-			if ( get_field('fiche_tel') )
-			{
-				echo '<div>' . get_field('fiche_tel') . '</div>';
+				if ( get_field('fiche_tel') )
+				{
+					echo '<div>' . get_field('fiche_tel') . '</div>';
+				}
+			
 			}
 			
 			echo '</div><!-- .member-properties -->';
@@ -115,30 +158,37 @@ if ($fiche_photo) {
 			// Second Section
 			// ***************
 			
-			if ( get_field('fiche_raison') )
-			{
-				echo '<h2 class="sub-title">Raison du choix:</h2>';
-				
-				echo '<div class="member-properties">';
-				
-				echo '<p> ' . get_field('fiche_raison') . '</p>';
-				
-				
-				
-				if ( get_field('fiche_citation') ) {
-					echo '<div>Citation: ' . get_field('fiche_citation') . '</div>';
+			// champ non-public!
+			
+			if ( is_user_logged_in() ) {
+			
+				if ( get_field('fiche_raison') )
+				{
+					echo '<h2 class="sub-title">Raison du choix:</h2>';
+					
+					echo '<div class="member-properties">';
+					
+					echo '<p> ' . get_field('fiche_raison') . '</p>';
+					
+					
+					
+					if ( get_field('fiche_citation') ) {
+						echo '<div>Citation: ' . get_field('fiche_citation') . '</div>';
+					}
+					
+					echo '</div><!-- .member-properties -->';
 				}
-				
-				echo '</div><!-- .member-properties -->';
+			
 			}
 			
 			edit_post_link( __( 'Edit', 'edin' ), '<div class="modify-linkx"><span class="edit">', '</span></div>' );
 			
 			?>
 	</div><!-- .member-id -->
-	<?php 
-	
-	
-	
-	 ?>
+
 </article><!-- #post-## -->
+<?php 
+
+} // END test if $show_fiche == true
+
+?>

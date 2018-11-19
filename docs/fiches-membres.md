@@ -12,6 +12,12 @@ Un questionnaire Google Drive a été créé, et diffusé par mail le 31 juillet
 
 https://goo.gl/forms/u4Eg0e1IxxB93XEP2 
 
+Les réponses sont récoltées dans un tableau Google Drive.  
+Dans : 04. Opérationnel > Communication Institutionnelle.
+
+
+
+
 Champs du questionnaire:
 
 - Prénom Nom * : utiliser le titre
