@@ -37,7 +37,13 @@ function cowork_body_classes( $classes ) {
 		$classes[] = 'no-sidebar-full';
 	}
 	
-	if ( is_archive( 'cwn_competence' ) || is_archive( 'cwn_fiche' ) ) {
+	// is_archive() does not accept any parameters. If you want to check if this is the archive of a custom post type, use is_post_type_archive( $post_type )
+	
+	if ( is_tax( 'cwn_competence' ) ) {
+		$classes[] = 'no-sidebar-full';
+	}
+	
+	if ( is_post_type_archive( 'cwn_fiche' ) ) {
 		$classes[] = 'no-sidebar-full';
 	}
 
