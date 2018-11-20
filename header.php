@@ -58,19 +58,41 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .site-branding -->
 
-		<?php if ( has_nav_menu( 'primary' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle"><?php _e( 'Menu', 'cowork' ); ?></button>
-				<?php
-					wp_nav_menu( array(
-						'theme_location'  => 'primary',
-						'container_class' => 'menu-primary',
-						'menu_class'      => 'clear',
-					) );
-				?>
-			</nav><!-- #site-navigation -->
-		<?php endif; ?>
+		<?php
+		
+		// FrontPage Menu
+		
+		if ( is_front_page() ) {
+		
+			if ( has_nav_menu( 'cowork_frontpage' ) ) { ?>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Menu', 'cowork' ); ?></button>
+					<?php
+						wp_nav_menu( array(
+							'theme_location'  => 'cowork_frontpage',
+							'container_class' => 'menu-primary',
+							'menu_class'      => 'clear',
+						) );
+					?>
+				</nav><!-- #site-navigation -->
+			<?php }
+		
+		} else if ( has_nav_menu( 'primary' ) ) { ?>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Menu', 'cowork' ); ?></button>
+					<?php
+						wp_nav_menu( array(
+							'theme_location'  => 'primary',
+							'container_class' => 'menu-primary',
+							'menu_class'      => 'clear',
+						) );
+					?>
+				</nav><!-- #site-navigation -->
+			<?php
+		
+		}
+		
+		?>
 	</header><!-- #masthead -->
 	
-
 	<div id="content" class="site-content">

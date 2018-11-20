@@ -11,6 +11,10 @@ function my_child_theme_setup() {
     register_nav_menus( array(
     	'membres_neuch'   => __( 'Membres Neuchâtel', 'cowork' ),
     ) );
+    
+    register_nav_menus( array(
+    	'cowork_frontpage'   => __( 'Page d’accueil', 'cowork' ),
+    ) );
    
 }
 add_action( 'after_setup_theme', 'my_child_theme_setup' );

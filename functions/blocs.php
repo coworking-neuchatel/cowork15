@@ -83,7 +83,13 @@ if ($custom_query->have_posts()) :
 				
 			?>
 			
-			<h2 id="salle-reunion" class="h2 title-style"><?php the_title(); ?></a></h2>
+			<h2 id="bloc-<?php 
+			
+				// The Slug
+				// echo $post->post_name;
+				echo get_post_field( 'post_name' );
+			
+			 ?>" class="h2 title-style"><?php the_title(); ?></a></h2>
 			</header>
 			
 			<div class="bloc-a-content bloc-basic">
