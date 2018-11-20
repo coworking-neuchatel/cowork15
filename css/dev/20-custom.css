@@ -164,6 +164,7 @@ h1.site-title a {
 .front-item .more-link,
 .biblio-tag-cloud .cat-item a {
 	padding: 12px 24px 8px 24px;
+	display: block;
 	background: #e20613;
 	color: #fff;
 	-moz-border-radius: 4px;

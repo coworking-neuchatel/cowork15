@@ -118,9 +118,9 @@
 	/* Fix margin when NO SIDEBAR */ 
 	
 	.sidebar-right .content-area {
-		float: none;
+	/*	float: none;
 		margin-right: auto;
-		margin-left: auto;
+		margin-left: auto;*/
 	}
 	
 	.hero-image .site-header {

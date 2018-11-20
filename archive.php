@@ -108,7 +108,7 @@ get_header();
 						if ( is_tax('cwn_thematique') ) {
 							?>
 							<footer class="entry-footer">
-							Venez trouver ces ouvrages dans la <a href="//coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel.</p>
+							<p>Venez trouver ces ouvrages dans la <a href="/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel.</p>
 							</footer>
 							<?php
 						}

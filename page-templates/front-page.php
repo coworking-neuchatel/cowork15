@@ -36,6 +36,8 @@ get_header(); ?>
 	
 	get_cowork_bloc_trio('Salle de réunion');
 	
+	get_cowork_bloc_trio('Salle de conférence');
+	
 	get_cowork_bloc_trio('Travailler 1 jour');
 		
 			
@@ -93,7 +95,7 @@ get_header(); ?>
 						<section>
 						<?php
 						
-						the_content('Read the rest of this entry &raquo;');
+						the_content();
 	
 						?>
 						<div style="clear: both;"></div>
@@ -135,7 +137,7 @@ get_header(); ?>
 				
 				// content
 				
-				the_content('Read the rest of this entry &raquo;');
+				the_content();
 				
 				?>
 				<div style="clear: both;"></div>
