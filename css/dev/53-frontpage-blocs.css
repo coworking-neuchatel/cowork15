@@ -291,12 +291,16 @@ On masque le contenu pour ne garder que le titre visible
 	display: none;
 }
 
-/* @group Gallery */
+/* @group Gallery - 680px */
 
 .lego .gallery {
 	margin-bottom: 0;
 	padding: 0;
 /*	background-color: #e74f4e;*/
+}
+
+.bloc-trio .lego .gallery  {
+	height: 100%;
 }
 
 .lego-photos .gallery-size-thumbnail {
@@ -308,6 +312,8 @@ On masque le contenu pour ne garder que le titre visible
 	padding: 0;
 	width: auto;
 	flex: 1 1 auto;
+	/* flex-grow, flex-shrink and flex-basis */
+	/* causes problems in safari */
 }
 
 /* Show only first 4 photos */
@@ -392,6 +398,12 @@ On masque le contenu pour ne garder que le titre visible
 	.bloc-a-notre-espace .lego-photos {
 		grid-area: gallery;
 		height: 150px;
+		overflow: hidden;
+	}
+	
+	.bloc-a-notre-espace .lego-content .gallery {
+		display: flex;
+		height: 100%;
 	}
 	
 	.bloc-a-notre-espace .gallery-item:nth-child(1),
@@ -493,13 +505,33 @@ On masque le contenu pour ne garder que le titre visible
 		min-height: 400px;
 	}
 	
+	
+	
 	.lego-photos .gallery-size-thumbnail {
 		flex-wrap: wrap;
 		flex-direction: row;
 	}
 	
+	.bloc-a-notre-espace .lego-photos {
+		height: 400px;
+		overflow: hidden;
+	}
+	
+	.bloc-a-notre-espace .lego-photos .gallery-size-thumbnail {
+		height: 400px;
+	}
+	
 	.lego-photos .gallery-item {
 		flex-basis: 50%; 
+		/* a corriger pour Visitez-Nous */
+	}
+	
+	.bloc-a-notre-espace .lego-content .gallery {
+		display: grid;
+	}
+	
+	.bloc-a-notre-espace .lego-photos .gallery-item {
+		flex-basis: 25%; 
 	}
 	
 	.lego-photos .gallery-item:nth-child(1n) {
@@ -578,6 +610,10 @@ On masque le contenu pour ne garder que le titre visible
 	
 	.bloc-basic .lego-photos .gallery-item {
 		display: none;
+	}
+	
+	.bloc-trio .lego-photos .gallery-item{
+		height: 100%;
 	}
 	
 	.bloc-basic .lego-photos .gallery-item:nth-child(1) {

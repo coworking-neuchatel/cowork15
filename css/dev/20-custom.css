@@ -133,7 +133,7 @@ h1.site-title a {
 		}
 		
 		.main-navigation li {
-			margin-right: 18px;
+/*			margin-right: 18px;*/
 		}
 }
 
@@ -160,17 +160,23 @@ h1.site-title a {
 
 /* @group Official Button Style */
 
+/*
+ Attention, cohérence...
+ Il y a aussi le style a.button
+*/
+
 .more-link-plus,
 .front-item .more-link,
 .biblio-tag-cloud .cat-item a {
-	padding: 12px 24px 8px 24px;
-	display: block;
+	padding:12px 12px 12px 12px;
+	display: inline-block;
 	background: #e20613;
 	color: #fff;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 	margin: 10px 10px 0px 10px;
+	line-height: 1;
 }
 
 .more-link-plus:hover,

@@ -219,7 +219,9 @@
 		display: inline-block;
 		position: relative;
 		padding: 0;
-		margin-right: 32px;
+		margin-bottom: 15px;
+		margin-right: 0;
+		margin-left: 10px;
 		border-top: 0;
 		text-align: left;
 	}
