@@ -36,4 +36,7 @@ Pour les modèles **sans sidebar**, il est nécessaire d'ajouter au body la clas
 Pour les templates custom du thème Coworking Neuchâtel, nous faisons cela dans cowork15/inc/extras.php:
 
 
-TODO: supprimer la classe sidebar-right pour le modèle archive des compétences!
+TODO: 
+
+* supprimer la classe sidebar-right pour le modèle archive des compétences!
+* les pages des thématiques (archive de taxonomie) ont la classe .no-sidebar-full MAIS ces pages ont une sidebar!

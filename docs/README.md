@@ -2,9 +2,9 @@
 
 Ce dossier contient la documentation technique du site [Coworking-Neuchatel](https://coworking-neuchatel.ch/).
 
-* Projet Github: [https://github.com/ms-studio/cowork15/](https://github.com/ms-studio/cowork15/)
-* La documentation: [http://ms-studio.github.io/cowork15/](http://ms-studio.github.io/cowork15/)
-* Issues: [https://github.com/ms-studio/cowork15/issues](https://github.com/ms-studio/cowork15/issues)
+* Projet Github: [https://github.com/coworking-neuchatel/cowork15/](https://github.com/ms-studio/cowork15/)
+* La documentation: [https://coworking-neuchatel.github.io/cowork15/](https://coworking-neuchatel.github.io/cowork15/)
+* Issues: [https://github.com/coworking-neuchatel/cowork15/issues](https://github.com/coworking-neuchatel/cowork15/issues)
 
 ## Sections
 
