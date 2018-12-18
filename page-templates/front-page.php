@@ -29,11 +29,7 @@ get_header(); ?>
 	*/
 	
 	get_template_part( 'template-parts/blocs/notre-espace' );
-	
-	// get_cowork_bloc('notre-espace','Visitez-nous');
-	
-	/* Salle de réunion */
-	
+
 	get_cowork_bloc_trio('Salle de réunion');
 	
 	get_cowork_bloc_trio('Salle de conférence');
@@ -158,6 +154,10 @@ get_header(); ?>
 		
 		get_template_part( 'template-parts/blocs/nos-membres' );
 		
+		
+		// PARTENARIATS
+		
+		// Créer un bloc avec répétiteur
 					
 	// TEMOIGNAGES
 	

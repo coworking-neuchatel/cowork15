@@ -6,6 +6,8 @@
 
 <?php 
 
+$show_fiche = false;
+
 $post_classes[] = "fiche";
 
 $fiche_photo = get_field('fiche_photo');
@@ -24,8 +26,6 @@ if ($fiche_photo) {
 // Vérifier si option public est: OUI, sinon ne rien afficher du tout. = fiche_acceptation
 
 // J'accepte que les réponses données aux questions entourées de "~" soient publiées sur le site web du Coworking Neuchâtel en accès public *
-
-$show_fiche = false;
 
 if ( get_field('fiche_acceptation') )
 {
@@ -51,7 +51,6 @@ if ( $show_fiche == true )  {
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_classes); ?>>
 		<?php 
-		
 		
 		if (in_array( "has-photo", $post_classes)) {
 			
@@ -86,7 +85,7 @@ if ( $show_fiche == true )  {
 			
 			echo '</div>';
 		
-		}
+		} // in_array
 				
 		?>
 	<div class="member-id">
@@ -96,13 +95,11 @@ if ( $show_fiche == true )  {
 			
 			echo '<div class="member-properties">';
 			
-			if ( get_field('fiche_profession') )
-			{
+			if ( get_field('fiche_profession') ) {
 				echo '<div>' . get_field('fiche_profession') . '</div>';
 			}
 			
-			if ( get_field('fiche_entreprise') )
-			{ 
+			if ( get_field('fiche_entreprise') ) { 
 			
 				// Combiner avec URL?
 				
@@ -113,7 +110,7 @@ if ( $show_fiche == true )  {
 				
 				echo '<div>' . get_field('fiche_entreprise') . '</div>';
 				
-				}
+				} // get_field('fiche_url')
 				
 			} else {
 				// Pas d'entreprise, indépendant
@@ -128,7 +125,7 @@ if ( $show_fiche == true )  {
 					}
 					echo '<div><a href="' . get_field('fiche_url') . '">' . $url . '</a></div>';
 				}
-			}
+			} // get_field('fiche_entreprise') )
 
 			if ( is_user_logged_in() ) {
 			
@@ -136,7 +133,7 @@ if ( $show_fiche == true )  {
 				{
 					echo '<div>Anniversaire: ' . get_field('fiche_anniv') . '</div>';
 				}
-			}
+			} // is_user_logged_in()
 			
 			$terms_competences = get_the_term_list( 
 				$post->ID, 
@@ -146,17 +143,14 @@ if ( $show_fiche == true )  {
 			
 			if ( ($terms_competences) ) {
 					
-					echo '<div class="competences">';
-			
-					echo $terms_competences;
-					
-					echo '</div>';
+				echo '<div class="competences">';
+				echo $terms_competences;
+				echo '</div>';
 			
 			}
 			
 			
-			if ( get_field('fiche_email') )
-			{
+			if ( get_field('fiche_email') ) {
 				
 				$email = get_field('fiche_email');
 				
@@ -169,8 +163,7 @@ if ( $show_fiche == true )  {
 						
 			if ( is_user_logged_in() ) {
 			
-				if ( get_field('fiche_tel') )
-				{
+				if ( get_field('fiche_tel') ) {
 					echo '<div>' . get_field('fiche_tel') . '</div>';
 				}
 			
@@ -202,7 +195,7 @@ if ( $show_fiche == true )  {
 					echo '</div><!-- .member-properties -->';
 				}
 			
-			}
+			} // is_user_logged_in()
 			
 			edit_post_link( __( 'Edit', 'edin' ), '<div class="modify-linkx"><span class="edit">', '</span></div>' );
 			
@@ -212,6 +205,6 @@ if ( $show_fiche == true )  {
 </article><!-- #post-## -->
 <?php 
 
-} // END test if $show_fiche == true
+} // END test show_fiche
 
 ?>
