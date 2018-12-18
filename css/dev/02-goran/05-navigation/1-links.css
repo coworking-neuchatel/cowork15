@@ -71,6 +71,16 @@ a.button-minimal:active {
 	color: #fff;
 }
 
+/*
+* Style to be applied on parent
+*/
+.centered-button {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+
+
 /* READ MORE link
 * Pseudo-Button class
 * Layout defined in : 11.content.css 

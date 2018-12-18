@@ -3,14 +3,34 @@
 
 /* Styles pour les fiches membres */
 
-#main .fiche {
-	border: 1px solid #e74f4e;
-	border-color: var(--hot-color);
+.fiche {
 	padding: 1em;
+	line-height: 1.5;
 }
 
-.fiche {
-	line-height: 1.5;
+.grid-fiches {
+	margin-bottom: 1em;
+}
+
+/* Note: 
+ * pour la bordure du haut, 
+ * un override est nécessaire pour :
+ * .archive .hentry
+*/
+
+.home .fiche,
+.archive .fiche {
+	border: 1px solid #e74f4e;
+	border-color: var(--hot-color);
+	margin-bottom: 1em;
+}
+
+@media only screen 
+and (min-width : 1020px) {
+	.home .fiche,
+	.archive .fiche {
+		margin-bottom: 0;
+	}
 }
 
 .fiche .entry-title {
@@ -19,15 +39,13 @@
 	margin: 0;
 }
 
-
-
 .fiche p {
 	margin: 0;
 }
 
 .member-properties {
 	font-size: 0.8em;
-	margin-left: 1em;
+/*	margin-left: 1em;*/
 }
 
 .fiche .sub-title {
@@ -39,11 +57,12 @@
 	color: #242424;
 }
 
-/* Photos */
+/* Photos des fiches */
 
 .fiche-photo {
 	padding: 0em 1em 0 0;
 }
+
 
 .fiche-photo img {
 	display: block;
@@ -51,6 +70,10 @@
 	height: 100px !important; /*hardcoded in markup*/
 	max-width: none;
 	margin-bottom: 1em;
+}
+
+.mini-fiche .fiche-photo img {
+	margin-bottom: 0;
 }
 
 .fiche-portrait img {
@@ -67,6 +90,8 @@
 .archive.post-type-archive-cwn_fiche .hentry {
 	padding-top: 1em;
 }
+
+/* Liste des compétences */
 
 .archive.tax-cwn_competence .entry-footer {
 	max-width: 40em;
@@ -97,6 +122,7 @@ and (min-width : 1020px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 1em;
+		row-gap: 1em;
 	}
 	
 }
