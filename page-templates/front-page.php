@@ -153,6 +153,11 @@ get_header(); ?>
 		endif;
 		wp_reset_postdata();
 		
+		
+		// FICHES DES MEMBRES
+		
+		get_template_part( 'template-parts/blocs/nos-membres' );
+		
 					
 	// TEMOIGNAGES
 	
