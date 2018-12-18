@@ -43,21 +43,38 @@
 .front-item {
 	padding: 0;
 }
+.base-margin {
+	padding-right: 24px;
+	padding-left: 24px;
+}
 
 .front-item-section {
 	margin-top: 1em;
 }
 
-@media only screen and (min-width: 680px) {
+@media screen and (min-width: 680px) {
 	.front-item {
 		padding: 0.5em 1em;
 	}
 }
 
-@media only screen and (min-width: 1020px) {
+/* Resp 2 */
+@media screen and (min-width: 768px) {	
+	.base-margin {
+		padding-right: 48px;
+		padding-left: 48px;
+	}
+}
+
+@media screen and (min-width: 1020px) {
 	.front-item {
 		padding: 0em 2em;
 	}
+	.base-margin {
+		padding-right: 72px;
+		padding-left: 72px;
+	}
+	
 	.home .header-member-menu {
 		padding: 0.5em 2em;
 	}

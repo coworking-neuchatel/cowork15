@@ -163,7 +163,7 @@ get_header(); ?>
 		) ); 
 				
 		if ($custom_query->have_posts()) :  ?>
-		<section class="testimonials testimonials-home front-item">
+		<section class="testimonials testimonials-home front-item base-margin">
   		
   		<h2 id="temoignages" class="h2 title-style">Témoignages</a></h2>
   		
