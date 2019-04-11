@@ -158,6 +158,15 @@ get_header(); ?>
 		// PARTENARIATS
 		
 		// Créer un bloc avec répétiteur
+		// Cf https://github.com/coworking-neuchatel/cowork15/issues/1
+		
+		
+		
+		// EVENEMENTS
+		
+		// Afficher les événements du coworking
+		// Cf https://github.com/coworking-neuchatel/cowork15/issues/3
+					
 					
 	// TEMOIGNAGES
 	
