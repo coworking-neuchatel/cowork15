@@ -110,31 +110,7 @@ h1.site-title a {
 			height: 62px;
 			background-size: 200px 62px;
 		}
-		
-		.main-navigation {
-/*			width: 720px;*/
-			margin-right: 72px;
-/*			background: #f0f;*/
-		}
-		
-		.menu-primary li:last-child {
-			margin-right: 0;
-		}
 
-		.menu-primary a {
-			border: 1px solid #E20613;
-			color: #E20613;
-			padding: 0.3em 0.5em 0.1em 0.5em;
-			text-transform: lowercase;
-		}
-		
-		.menu-primary a:hover {
-			background: #E20613;
-		}
-		
-		.main-navigation li {
-/*			margin-right: 18px;*/
-		}
 }
 
 @media screen and (min-width: 1230px) {

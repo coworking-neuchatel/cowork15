@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 5.3 Primary Navigation
 --------------------------------------------------------------*/
+
 /* Menu Toggle */
 .menu-toggle {
 	display: block;
@@ -32,6 +33,7 @@
 }
 
 /* Menu Primary */
+
 .main-navigation {
 	color: #fff;
 	font-weight: bold;
@@ -78,6 +80,40 @@
 }
 .menu-primary .sub-menu.toggle-on {
 	display: block;
+}
+
+/*
+Media Queries
+*/
+
+@media screen and (min-width: 1020px) {	
+
+	.main-navigation {
+		margin-right: 72px;
+	}
+	
+	.menu-primary li:last-child {
+		margin-right: 0;
+	}
+
+	.menu-primary a {
+		border: 1px solid #E20613;
+		color: #E20613;
+		padding: 0.3em 0.5em;
+		text-transform: lowercase;
+	}
+	
+	.menu-primary a:hover {
+		background: #E20613;
+	}
+
+}
+
+@media screen and (min-width: 1230px) {
+		
+	.main-navigation {
+		width: 800px;
+	}
 }
 
 
