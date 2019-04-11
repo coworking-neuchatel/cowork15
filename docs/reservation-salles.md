@@ -11,8 +11,11 @@ https://coworking-neuchatel.ch/reservation-salle-de-reunion/
 
 Limitation des accès à cette page: la page utilise [le modèle "Login"](https://github.com/ms-studio/cowork15/blob/master/themes/cowork15/page-templates/full-width-login.php). La condition est: is_user_logged_in().
 
-La page qui permet de faire une réservation:
-https://coworking-neuchatel.ch/reserver-salle-de-reunion/
+La page qui permet de faire une réservation:  
+https://coworking-neuchatel.ch/reserver-salle-de-reunion/  
+Formulaire:  "Réservation salle de réunion" (id 12)
+
+Plage des heures: paramétrée directement dans le formulaire. On peut mettre une limite d'heure de début / fin.
 
 La page qui permet de modifier ses réservations:
 https://coworking-neuchatel.ch/modifier-vos-reservations/

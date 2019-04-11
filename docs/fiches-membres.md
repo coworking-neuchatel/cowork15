@@ -15,10 +15,7 @@ https://goo.gl/forms/u4Eg0e1IxxB93XEP2
 Les réponses sont récoltées dans un tableau Google Drive.  
 Dans : 04. Opérationnel > Communication Institutionnelle.
 
-
-
-
-Champs du questionnaire:
+## Champs du questionnaire:
 
 - Prénom Nom * : utiliser le titre
 - Photo de profil (de vous) : fiche_photo
@@ -63,12 +60,13 @@ Dans la déclaration du post-type "fiche", on définit le slug: "membre".
 cela détermine l'URL de la page Archive de ce Post-Type.
 Pour afficher la page des membres, on utilisera ce template: archive-cwn_fiche.php
 
-Lies des compétences: le slug est "competence". Cela produit des URL de ce type:
-p.ex. compétence: webdesign
-http://cowork:8888/competence/webdesign/
+### Listes des compétences
+
+Le slug de cette taxonomie est "competence". Cela produit des URL de ce type:
+p.ex. compétence: webdesign : coworking-neuchatel.ch/competence/webdesign/
+
 Quel template sera utilisé?
 taxonomy-$taxonomy.php : donc, taxonomy-cwn_competence.php
-
 
 ***
 
