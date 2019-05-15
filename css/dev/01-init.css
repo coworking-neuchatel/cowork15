@@ -40,3 +40,5 @@
 
 @import '52-frontpage.css';
 @import '53-frontpage-blocs.css';
+@import '54-blocs/bloc-basic.css';
+@import '54-blocs/bloc-partenaires.css';

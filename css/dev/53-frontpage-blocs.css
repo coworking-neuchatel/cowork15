@@ -296,7 +296,6 @@ On masque le contenu pour ne garder que le titre visible
 .lego .gallery {
 	margin-bottom: 0;
 	padding: 0;
-/*	background-color: #e74f4e;*/
 }
 
 .bloc-trio .lego .gallery  {
@@ -370,11 +369,6 @@ On masque le contenu pour ne garder que le titre visible
 		height: 300px;
 	}
 	
-	.bloc-a .bloc-quad {
-		
-		/*grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;*/
-	}
 	
 	.bloc-a-notre-espace .bloc-quad {
 		display: grid;
@@ -554,91 +548,3 @@ On masque le contenu pour ne garder que le titre visible
 	
 }
 
-/* Layout for bloc-basic 
- Used by: Salle de réunion
- 
- We have three items:
- - lego-visitez-nous
- - lego-details
- - lego-photos
- 
-*/
-
-@media only screen and (min-width: 680px) {
-	
-	.front-item .bloc-basic {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 
-		    "details   photo" 
-				"action    photo";
-		background-color: #fff;
-		border: 1px solid #d6d6d6;
-	}
-		
-		
-	}
-	
-	.bloc-basic .lego-action {
-		grid-area: action;
-	}
-	
-	.lego-action .lego-content {
-		min-height: 150px;
-	}
-	
-	.bloc-basic .lego-details {
-		grid-area: details;
-		/*background-color: #F8F3E9;*/
-	}
-	
-	.bloc-basic .lego-details .lego-content {
-		padding: 2em;
-	}
-	
-	/* Lego-photos
-	*/
-	
-	.bloc-basic .lego-photos {
-		grid-area: photo;
-		position: relative;
-	}
-	
-	.bloc-basic .lego-photos .lego-content {
-		height: 100%;
-	}
-	
-	.bloc-basic .lego-photos .gallery-item {
-		display: none;
-	}
-	
-	.bloc-trio .lego-photos .gallery-item{
-		height: 100%;
-	}
-	
-	.bloc-basic .lego-photos .gallery-item:nth-child(1) {
-		display: block;
-	}
-	
-	.bloc-basic .lego-photos .gallery-item:nth-child(2) {
-		display: block;
-		position: absolute;
-		bottom: 20px;
-		right: 20px;
-		height: 140px;
-		width: 140px;
-		border: 3px solid #fff;
-		border-radius: 10px;
-		overflow: hidden;
-		box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-	}
-	
-	.bloc-basic .lego-photos .gallery-item:nth-child(2) img {
-/*		opacity: 0.4;*/
-	}
-	
-	
-	
-	/* Styles Salle Réunion */
-	
-}

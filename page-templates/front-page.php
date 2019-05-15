@@ -160,6 +160,7 @@ get_header(); ?>
 		// Créer un bloc avec répétiteur
 		// Cf https://github.com/coworking-neuchatel/cowork15/issues/1
 		
+		get_template_part( 'template-parts/blocs/partenaires' );
 		
 		
 		// EVENEMENTS

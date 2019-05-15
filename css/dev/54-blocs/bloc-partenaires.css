@@ -1,0 +1,37 @@
+/* Front Page Blocs */
+
+/* Principe des Breakpoints: */
+/* On reste dans le mode purement mobile jusqu'à 680px */
+
+
+/* Bloc Partenaires */
+
+.bloc-partenaires-item {
+	width: 25%;
+	float: left;
+}
+
+.bloc-partenaires-item img {
+	padding: 1em;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.bloc-partenaires-item a:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.bloc-partenaires-item p {
+	font-size: 0.8em;
+	padding: 0.5em;
+}
+
+
+@media only screen 
+and (min-width : 920px) {
+	.bloc-partenaires-item {
+		width: 25%;
+	}
+	
+}
