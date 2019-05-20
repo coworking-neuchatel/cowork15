@@ -265,7 +265,6 @@ Media Queries
 		display: block;
 		padding-top: 12px;
 		padding-bottom: 10px;
-		border-bottom: 2px solid transparent;
 	}
 	.main-navigation ul ul {
 		float: left;

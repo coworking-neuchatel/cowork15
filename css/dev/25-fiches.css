@@ -126,3 +126,25 @@ and (min-width : 1020px) {
 	}
 	
 }
+
+/* Frontpage Layout */
+
+@media only screen 
+and (min-width : 620px) {
+	
+	.home .grid-fiches {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1em;
+		row-gap: 1em;
+	}
+
+}
+
+@media only screen 
+and (min-width : 900px) {
+	.home .grid-fiches {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
