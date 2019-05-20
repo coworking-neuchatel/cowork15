@@ -43,8 +43,7 @@ if ($custom_query->have_posts()) :
 					
 						echo '<div class="bloc-partenaires-item">';
 						
-						echo '<a href="';
-						echo get_sub_field('cwn_lien_partenaire').'">';
+						echo '<a href="'.get_sub_field('cwn_lien_partenaire').'">';
 						
 					 	$img = get_sub_field('cwn_logo_partenaire');
 					 	if ($img) {
@@ -55,7 +54,13 @@ if ($custom_query->have_posts()) :
 					 	}					 
 					  echo '</a>';
 					  					 
-					 echo '<p>'.get_sub_field('cwn_texte_partenaire').'</p>';
+					 echo '<p>'.get_sub_field('cwn_texte_partenaire');
+					 if (!empty(get_sub_field('cwn_lien_partenaire'))) {
+					 	echo '<a href="'.get_sub_field('cwn_lien_partenaire').'">';
+					 	echo '<span> &rarr; site web</span>';
+					 	echo '</a>';
+					 }
+					 echo '</p>';
 					 
 					 echo '</div>';
 				
