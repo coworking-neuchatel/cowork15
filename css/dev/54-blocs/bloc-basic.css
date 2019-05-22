@@ -19,10 +19,7 @@
 		background-color: #fff;
 		border: 1px solid #d6d6d6;
 	}
-		
-		
-	}
-	
+			
 	.bloc-basic .lego-action {
 		grid-area: action;
 	}
@@ -77,12 +74,12 @@
 		box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 	}
 	
-	.bloc-basic .lego-photos .gallery-item:nth-child(2) img {
-/*		opacity: 0.4;*/
+}
+
+@media only screen and (min-width: 1200px) {
+	.front-item .bloc-basic {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		    "details   action  photo";
 	}
-	
-	
-	
-	/* Styles Salle Réunion */
-	
 }

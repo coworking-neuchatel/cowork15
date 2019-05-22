@@ -117,6 +117,12 @@
 	
 	/* Fix margin when NO SIDEBAR */ 
 	
+	.no-sidebar-full .content-area {
+	    float: none;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	
 	.sidebar-right .content-area {
 	/*	float: none;
 		margin-right: auto;
