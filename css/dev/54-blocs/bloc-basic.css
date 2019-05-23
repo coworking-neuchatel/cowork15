@@ -8,6 +8,11 @@
  
 */
 
+.lego-content li {
+	margin-left: 24px;
+	text-indent: -24px;
+}
+
 @media only screen and (min-width: 680px) {
 	
 	.front-item .bloc-basic {
@@ -32,6 +37,7 @@
 		grid-area: details;
 		/*background-color: #F8F3E9;*/
 	}
+
 	
 	.bloc-basic .lego-details .lego-content {
 		padding: 2em;
@@ -76,10 +82,27 @@
 	
 }
 
+@media only screen and (min-width: 1000px) {
+	.front-item .bloc-basic {
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas: 
+		    "details   action" 
+		    "details    photo";
+	}
+	/* colonnes pour le texte */
+	.bloc-basic .lego-details .lego-content {
+		column-count: 2;
+		column-gap: 2em;
+	}
+	.bloc-basic .lego-details .lego-content p {
+		break-inside: avoid;
+	}
+}
+
 @media only screen and (min-width: 1200px) {
 	.front-item .bloc-basic {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-areas: 
-		    "details   action  photo";
+		    "details action photo";
 	}
 }

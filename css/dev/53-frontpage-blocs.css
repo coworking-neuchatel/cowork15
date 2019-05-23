@@ -19,16 +19,6 @@
 	padding-right: 2em;
 }
 
-.bloc-a.state-open .bloc-a-header {
-/*	padding-left: 0;
-	padding-right: 0;
-	padding: 0;*/
-}
-
-.bloc-a.state-open .title-style {
-/*	padding-top: 1.2em;
-	padding-bottom: 1.2em;*/
-}
 
 /* Title Styles : Bloc Title */
 
@@ -200,7 +190,7 @@ On masque le contenu pour ne garder que le titre visible
 @media only screen and (min-width: 680px) {
 
 	.lego-details .lego-content {
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 }
 
