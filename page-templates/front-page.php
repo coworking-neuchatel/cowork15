@@ -34,7 +34,7 @@ get_header(); ?>
 	
 	get_cowork_bloc_trio('Salle de conférence');
 	
-	get_cowork_bloc_trio('Travailler 1 jour');
+	get_cowork_bloc_trio('Travailler/Essayer 1 jour');
 		
 			
 	// Bloc: Prestations
