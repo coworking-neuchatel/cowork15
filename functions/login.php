@@ -25,4 +25,4 @@ add_filter( 'login_headerurl', 'cowork_login_logo_url' );
 function cowork_login_logo_url_title() {
     return 'Coworking Neuchâtel';
 }
-add_filter( 'login_headertitle', 'cowork_login_logo_url_title' );
+add_filter( 'login_headertext', 'cowork_login_logo_url_title' );
